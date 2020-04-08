@@ -1,0 +1,44 @@
+# variables
+export ZSH=$HOME/.dotfiles/zsh
+export DOTFILES=$HOME/.dotfiles
+export PATH="$PATH:$DOTFILES/bin"
+export PATH="$PATH:/usr/local/sbin"
+export PATH="$PATH:/usr/local/opt/mysql@5.7/bin"
+export EDITOR='nvim'
+export LSCOLORS="exfxcxdxbxegedabagacad"
+export CLICOLOR=true
+export FZF_DEFAULT_COMMAND="ag -ilU --hidden"
+export FZF_DEFAULT_OPTS='--layout=reverse'
+export BAT_STYLE='plain'
+typeset -aU path fpath
+
+# fpath
+fpath=($ZSH/functions $fpath)
+
+# fnm
+eval "$(fnm env --multi)"
+
+# autocomplete
+setopt auto_cd
+autoload -U compinit && compinit -C
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# key bindings
+bindkey -e
+# Alt+Arrows to navigate words
+bindkey '^[b' backward-word
+bindkey '^[f' forward-word
+# Shift Tab
+bindkey '^[[Z' reverse-menu-complete
+
+# select word
+autoload -U select-word-style && select-word-style bash
+
+# load configuration files
+for file in $ZSH/*.zsh
+do
+    source $file
+done
+
+test -e /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh && source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh

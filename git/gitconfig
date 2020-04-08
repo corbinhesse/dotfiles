@@ -1,0 +1,32 @@
+[include]
+    path = ~/.gitconfig.local
+[apply]
+    whitespace = nowarn
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+[color "diff"]
+    meta = magenta dim
+[color "status"]
+    header = dim
+    branch = cyan
+    added = green
+    changed = yellow
+    untracked = red
+[color "decorate"]
+    tag = cyan
+[commit]
+    template = ~/.gitcommit
+    verbose = true
+[core]
+    excludesfile = ~/.gitignore
+    editor = nvim
+    mergeoptions = --no-edit
+[difftool]
+    prompt = false
+[help]
+    autocorrect = 1
+[push]
+    default = simple

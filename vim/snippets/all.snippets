@@ -1,0 +1,83 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet robots "robots.txt" b
+User-agent: *
+Disallow: $0
+endsnippet
+
+snippet editorconfig "Generate .editorconfig File" b
+# http://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+trim_trailing_whitespace = true
+
+[*.md]
+max_line_length = 0
+trim_trailing_whitespace = false
+
+[COMMIT_EDITMSG]
+max_line_length = 0
+endsnippet
+
+snippet prettier "Prettier Config File" b
+// prettier.config.js
+module.exports = {
+  semi: false,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: 'es5',
+}
+endsnippet
+
+snippet readme "Generate README" b
+# Title
+
+## Installation
+
+### Prerequisites
+
+### Development
+
+## Built With
+
+- [Package](https://example.com) - Framework
+
+## Contribution
+
+Please make sure to read the [Contributing Guide]() before making a pull request.
+
+## Changelog
+
+Information for each release is documented in the [release notes]().
+endsnippet

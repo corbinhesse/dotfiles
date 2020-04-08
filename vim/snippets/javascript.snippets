@@ -1,0 +1,32 @@
+snippet prettier "Prettier Config File" b
+// prettier.config.js
+module.exports = {
+	semi: false,
+	singleQuote: true,
+	tabWidth: 2,
+	trailingComma: 'es5',
+}
+endsnippet
+
+snippet "try" "Try / Catch" w
+try {
+	$1
+} catch (err) {
+	throw err
+}
+endsnippet
+
+snippet switch "Switch Statement" w
+switch (${1:value}) {
+	case ${2:condition}:
+		$0
+		break;
+	default:
+		$3
+	break;
+}
+endsnippet
+
+snippet lambda "Lambda Function" w
+($0) => {$1}
+endsnippet
