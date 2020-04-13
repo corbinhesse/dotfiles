@@ -41,3 +41,11 @@ if !exists("*SourceConfig")
   endfunction
   command! Config call SourceConfig()
 endif
+
+function! MyClapOnEnter() abort
+  augroup ClapEnsureAllClosed
+    autocmd!
+    autocmd BufEnter,WinEnter,WinLeave * ++once call clap#floating_win#close()
+  augroup END
+endfunction
+autocmd User ClapOnEnter call MyClapOnEnter()

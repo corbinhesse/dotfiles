@@ -40,3 +40,4 @@ nmap <silent><Leader>/ :nohlsearch<CR>
 
 " Exit terminal
 tnoremap <C-\> <C-\><C-n>
+au TermOpen * setlocal signcolumn=no

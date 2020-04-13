@@ -50,7 +50,6 @@ let s:gray700 = '#455A64'
 let s:gray800 = '#37474F'
 let s:gray900 = '#263238'
 let s:gray1000 = '#12181B' "50% of s:gray900 and s:bg
-let s:gray1100 = '#0D1114'
 
 let s:red = '#FF5252' "Red A200
 let s:pink = '#FF80AB' "Pink A100
@@ -69,7 +68,7 @@ let s:yellow_diff = '#32362C' "15%
 let s:yellow_diff_text = '#545032' "25%
 let s:green_diff = '#40503E' "25%
 
-" Defined globally for Lightlight
+" Globally defined variables
 let g:material_colorscheme_map = {}
 let g:material_colorscheme_map.bg = s:bg
 let g:material_colorscheme_map.fg = s:fg
@@ -127,7 +126,6 @@ call s:SetHighlight('Gray700', s:gray700, '', '')
 call s:SetHighlight('Gray800', s:gray800, '', '')
 call s:SetHighlight('Gray900', s:gray900, '', '')
 call s:SetHighlight('Gray1000', s:gray1000, '', '')
-call s:SetHighlight('Gray1100', s:gray1100, '', '')
 
 " Vim Editor
 call s:SetHighlight('ColorColumn', s:red, 'none', '')
@@ -152,7 +150,7 @@ call s:SetHighlight('NonText', s:gray700, '', '')
 call s:SetHighlight('Normal', s:fg, 'none', '')
 call s:SetHighlight('NormalFloat', s:fg, s:black, '')
 call s:SetHighlight('Pmenu', s:gray100, s:black, '')
-call s:SetHighlight('PmenuSel', s:cyan, s:gray1000, '')
+call s:SetHighlight('PmenuSel', s:blue, s:gray1000, '')
 call s:SetHighlight('PmenuSbar', '', s:black, '')
 call s:SetHighlight('PmenuThumb', '', s:gray1000, '')
 call s:SetHighlight('Question', s:blue, '', '')
@@ -168,6 +166,8 @@ call s:SetHighlight('StatusLineNC', s:gray500, s:gray900, '')
 call s:SetHighlight('StatusLineTerm', s:bg, s:gray900, '')
 call s:SetHighlight('StatusLineTermNC', s:bg, s:gray900, '')
 call s:SetHighlight('Substitute', s:pink, s:violet, '')
+call s:SetHighlight('TermCursor', s:bg, s:red, '')
+call s:SetHighlight('TermCursorNC', s:bg, s:red_diff, '')
 call s:SetHighlight('Title', s:green, '', '')
 call s:SetHighlight('VertSplit', s:gray700, 'none', '')
 call s:SetHighlight('Visual', '', s:gray800, '')
@@ -267,7 +267,6 @@ call s:SetHighlight('jsDestructuringBraces', s:violet, '', '')
 call s:SetHighlight('jsVariableDef', s:violet, '', '')
 call s:SetHighlight('jsUndefined', s:orange, '', '')
 
-
 " import/export
 call s:SetHighlight('typescriptReserved', s:teal, '', 'italic')
 call s:SetHighlight('jsImport', s:teal, '', 'italic')
@@ -308,9 +307,8 @@ call s:SetHighlight('xmlTagName', s:blue, '', '')
 call s:SetHighlight('vueSurroundingTag', s:blue, '', '')
 " attribute
 call s:SetHighlight('jsxAttrib', s:yellow, '', 'italic')
-
-
-
+" Match Tag
+call s:SetHighlight('MatchTag', '', s:yellow_diff, 'bold')
 
 " JSON
 call s:SetHighlight('jsonBraces', s:fg, '', '')
@@ -385,6 +383,37 @@ call s:SetHighlight('fugitiveUnstagedModifier', s:gray500, '', '')
 call s:SetHighlight('fugitiveUntrackedHeading', s:red, '', '')
 call s:SetHighlight('fugitiveUntrackedModifier', s:gray500, '', '')
 
+" " Clap
+call s:SetHighlight('ClapFile', s:gray200, '', 'none')
+call s:SetHighlight('ClapNoMatchesFound', s:gray500, '', '')
+" call s:SetHighlight('ClapInput', 'none', s:gray1000, '')
+" call s:SetHighlight('ClapDisplay', 'none', s:black, '')
+" call s:SetHighlight('ClapDisplay2', 'none', s:pink, '')
+" " call s:SetHighlight('ClapDefaultSelected', s:red, s:gray900, 'italic')
+" call s:SetHighlight('ClapDefaultCurrentSelection', 'none', 'none', 'bold')
+" call s:SetHighlight('ClapSelected', 'none', s:gray900, 'bold')
+" call s:SetHighlight('ClapPreview', 'none', s:gray1000, '')
+call s:SetHighlight('ClapProviderId', s:teal, '', '')
+" Provider
+call s:SetHighlight('ClapProviderColon', s:gray500, '', '')
+call s:SetHighlight('ClapProviderAbout', s:gray200, '', '')
+" Grep
+call s:SetHighlight('ClapMatches', s:red, s:gray1000, '')
+call s:SetHighlight('ClapFuzzyMatches', s:red, s:cyan, '')
+call s:SetHighlight('ClapFpath', s:green, '', '')
+call s:SetHighlight('ClapColumn', s:teal, '', '')
+call s:SetHighlight('ClapLinNrColumn', s:teal, '', '')
+call s:SetHighlight('ClapLineNr', s:orange, '', '')
+call s:SetHighlight('ClapIcon', s:gray800, '', '')
+call s:SetHighlight('ClapIconUnknown', s:gray800, '', '')
+" Buffers
+call s:SetHighlight('ClapBuffersNumberBracket', s:gray500, '', '')
+call s:SetHighlight('ClapBuffersNumber', s:violet, '', '')
+call s:SetHighlight('ClapBuffersFsize', s:gray500, '', '')
+call s:SetHighlight('ClapBuffersLnum', s:teal, '', '')
+call s:SetHighlight('ClapBuffersExtra', s:blue, '', '')
+call s:SetHighlight('ClapBuffersFname', s:green, '', '')
+
 " coc-smartf
 augroup Smartf
   autocmd User SmartfEnter :call s:SetHighlight('Conceal', s:bg, s:caret, '')
@@ -398,23 +427,22 @@ call s:SetHighlight('CocExplorerFileRootName', s:purple, 'none', 'italic')
 call s:SetHighlight('CocExplorerFileDirectory', s:blue, 'none', '')
 
 " Neovim terminal colors
-if has('nvim')
-  let g:terminal_color_background = s:bg
-  let g:terminal_color_foreground = s:fg
-  let g:terminal_color_0 = s:black
-  let g:terminal_color_1 = s:red
-  let g:terminal_color_2 = s:green
-  let g:terminal_color_3 = s:yellow
-  let g:terminal_color_4 = s:blue
-  let g:terminal_color_5 = s:purple
-  let g:terminal_color_6 = s:cyan
-  let g:terminal_color_7 = s:white
-  let g:terminal_color_8 = s:gray500
-  let g:terminal_color_9 = g:terminal_color_1
-  let g:terminal_color_10 = g:terminal_color_2
-  let g:terminal_color_11 = g:terminal_color_3
-  let g:terminal_color_12 = g:terminal_color_4
-  let g:terminal_color_13 = g:terminal_color_5
-  let g:terminal_color_14 = g:terminal_color_6
-  let g:terminal_color_15 = g:terminal_color_7
-endif
+let g:terminal_color_background = s:bg
+let g:terminal_color_foreground = s:fg
+let g:terminal_color_0 = s:gray500
+let g:terminal_color_1 = s:red
+let g:terminal_color_2 = s:green
+let g:terminal_color_3 = s:yellow
+let g:terminal_color_4 = s:blue
+let g:terminal_color_5 = s:purple
+let g:terminal_color_6 = s:cyan
+let g:terminal_color_7 = s:white
+let g:terminal_color_8 = s:gray500
+let g:terminal_color_9 = g:terminal_color_1
+let g:terminal_color_10 = g:terminal_color_2
+let g:terminal_color_11 = g:terminal_color_3
+let g:terminal_color_12 = g:terminal_color_4
+let g:terminal_color_13 = g:terminal_color_5
+let g:terminal_color_14 = g:terminal_color_6
+let g:terminal_color_15 = g:terminal_color_7
+let g:terminal_color_16 = g:terminal_color_8

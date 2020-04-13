@@ -1,6 +1,6 @@
 # Theme
---theme="material"
+--theme=material
 
---style="grid"
+--style=grid
 
 --italic-text=always

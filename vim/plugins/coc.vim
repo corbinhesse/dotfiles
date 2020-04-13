@@ -27,9 +27,6 @@ let g:coc_global_extensions = [
 
 " Keybindings
 
-" coc-lists
-nmap <silent><Leader><Space> :CocList<CR>
-
 " coc-explorer
 nmap <silent><Leader>e :CocCommand explorer --toggle<CR>
 
