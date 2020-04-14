@@ -13,6 +13,9 @@ alias ls="gls -FlAh --color"
 alias l="tree --dirsfirst --noreport -a -L 1"
 alias tree="tree --dirsfirst -I node_modules"
 
+#
+alias man="Man"
+
 # git
 alias g="git"
 alias gaa="git add --all"
