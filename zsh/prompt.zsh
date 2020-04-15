@@ -21,16 +21,16 @@ git_dirty() {
   fi
 }
 
-git_prompt_info () {
+git_prompt_info() {
   ref=$($git symbolic-ref HEAD 2>/dev/null) || return
   echo "${ref#refs/heads/}"
 }
 
-unpushed () {
+unpushed() {
   $git cherry -v @{upstream} 2>/dev/null
 }
 
-need_push () {
+need_push() {
   if [[ $(unpushed) == "" ]]
   then
     echo ""

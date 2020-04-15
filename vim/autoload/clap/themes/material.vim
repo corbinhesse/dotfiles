@@ -16,7 +16,7 @@ let s:palette.current_selection = { 'gui': 'bold' }
 let s:palette.matches = { 'guifg': g:material_colorscheme_map.pink, 'guibg': g:material_colorscheme_map.cyan, 'gui': 'italic' }
 
 let s:palette.selected_sign = { 'guifg': g:material_colorscheme_map.caret }
-let s:palette.current_selection_sign = { 'guifg': g:material_colorscheme_map.caret }
+let s:palette.current_selection_sign = { 'guifg': g:material_colorscheme_map.red }
 
 let g:clap#themes#material#palette = s:palette
 

@@ -383,16 +383,9 @@ call s:SetHighlight('fugitiveUnstagedModifier', s:gray500, '', '')
 call s:SetHighlight('fugitiveUntrackedHeading', s:red, '', '')
 call s:SetHighlight('fugitiveUntrackedModifier', s:gray500, '', '')
 
-" " Clap
+" Clap
 call s:SetHighlight('ClapFile', s:gray200, '', 'none')
 call s:SetHighlight('ClapNoMatchesFound', s:gray500, '', '')
-" call s:SetHighlight('ClapInput', 'none', s:gray1000, '')
-" call s:SetHighlight('ClapDisplay', 'none', s:black, '')
-" call s:SetHighlight('ClapDisplay2', 'none', s:pink, '')
-" " call s:SetHighlight('ClapDefaultSelected', s:red, s:gray900, 'italic')
-" call s:SetHighlight('ClapDefaultCurrentSelection', 'none', 'none', 'bold')
-" call s:SetHighlight('ClapSelected', 'none', s:gray900, 'bold')
-" call s:SetHighlight('ClapPreview', 'none', s:gray1000, '')
 call s:SetHighlight('ClapProviderId', s:teal, '', '')
 " Provider
 call s:SetHighlight('ClapProviderColon', s:gray500, '', '')
@@ -406,13 +399,6 @@ call s:SetHighlight('ClapLinNrColumn', s:teal, '', '')
 call s:SetHighlight('ClapLineNr', s:orange, '', '')
 call s:SetHighlight('ClapIcon', s:gray800, '', '')
 call s:SetHighlight('ClapIconUnknown', s:gray800, '', '')
-" Buffers
-call s:SetHighlight('ClapBuffersNumberBracket', s:gray500, '', '')
-call s:SetHighlight('ClapBuffersNumber', s:violet, '', '')
-call s:SetHighlight('ClapBuffersFsize', s:gray500, '', '')
-call s:SetHighlight('ClapBuffersLnum', s:teal, '', '')
-call s:SetHighlight('ClapBuffersExtra', s:blue, '', '')
-call s:SetHighlight('ClapBuffersFname', s:green, '', '')
 
 " coc-smartf
 augroup Smartf
@@ -425,6 +411,9 @@ call s:SetHighlight('CocExplorerNormal', s:red, 'none', '')
 call s:SetHighlight('CocExplorerIndentLine', s:gray800, 'none', '')
 call s:SetHighlight('CocExplorerFileRootName', s:purple, 'none', 'italic')
 call s:SetHighlight('CocExplorerFileDirectory', s:blue, 'none', '')
+
+" zsh
+call s:SetHighlight('zshFunction', s:blue, '', '')
 
 " Neovim terminal colors
 let g:terminal_color_background = s:bg

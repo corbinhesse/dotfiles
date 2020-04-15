@@ -4,10 +4,10 @@ let g:clap_disable_bottom_top = 1
 let g:clap_disable_run_rooter = 1
 let g:clap_enable_icon = 0
 let g:clap_insert_mode_only = 1
-let g:clap_prompt_format = ' %spinner%%forerunner_status% %provider_id%: '
+let g:clap_prompt_format = '%spinner% %provider_id%: '
 let g:clap_provider_grep_blink = [0,0]
 let g:clap_provider_grep_enable_icon = 0
-let g:clap_provider_grep_opts = '--hidden --iglob !.git/ --no-ignore-vcs --vimgrep --smart-case'
+let g:clap_provider_grep_opts = '--hidden -g !.git/ -g !node_modules/ --vimgrep --smart-case'
 let g:clap_theme = 'material'
 let g:clap_layout = {
   \ 'width': '80%',
@@ -34,8 +34,11 @@ let g:clap_fuzzy_match_hl_groups = [
 " Keybindings
 nmap <silent><silent><Leader><Space> :Clap<CR>
 nmap <silent><Leader>,, :Clap!! files
-  \ ++finder=rg --files --follow --hidden --no-ignore -g !.git/<CR>
+  \ ++finder=rg --files --follow --hidden --no-ignore -g !.git/ -g !node_modules/<CR>
 nmap <silent><Leader>,. :Clap!! git_files<CR>
 nmap <silent><Leader>,g :Clap!! git_diff_files<CR>
 nmap <silent><Leader>,/ :Clap!! grep<CR>
 nmap <silent><Leader>,b :Clap!! buffers<CR>
+
+autocmd FileType clap_input inoremap <silent> <buffer> <C-n> <C-R>=clap#navigation#linewise('down')<CR>
+autocmd FileType clap_input inoremap <silent> <buffer> <C-p> <C-R>=clap#navigation#linewise('up')<CR>

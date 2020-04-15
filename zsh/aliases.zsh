@@ -49,7 +49,7 @@ alias n8="fnm use 8"
 alias n10="fnm use 10"
 alias n12="fnm use 12"
 
-#npm
+# npm
 alias n="npm"
 alias ni="npm i"
 alias nis="npm i --save"
@@ -58,3 +58,6 @@ alias nr="npm run"
 alias nrd="npm run dev"
 alias nrt="npm run test"
 alias nrtw="npm run test:watch"
+
+# bat
+alias bat="COLORTERM=truecolor bat"
