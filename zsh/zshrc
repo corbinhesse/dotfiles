@@ -10,6 +10,7 @@ export CLICOLOR=true
 export FZF_DEFAULT_COMMAND="ag -ilU --hidden"
 export FZF_DEFAULT_OPTS='--layout=reverse'
 export BAT_STYLE='plain'
+export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 typeset -aU path fpath
 
 # fpath

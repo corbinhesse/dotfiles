@@ -1,0 +1,6 @@
+--colors=path:fg:green
+--colors=line:fg:yellow
+-g=!.git/
+-g=!node_modules/
+-g=!*.lock
+-g=!*-lock.json
