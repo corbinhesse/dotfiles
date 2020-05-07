@@ -7,7 +7,7 @@ let g:clap_insert_mode_only = 1
 let g:clap_prompt_format = '%spinner% %provider_id%: '
 let g:clap_provider_grep_blink = [0,0]
 let g:clap_provider_grep_enable_icon = 0
-let g:clap_provider_grep_opts = '--hidden -g !.git/ -g !node_modules/ --vimgrep --smart-case'
+let g:clap_provider_grep_opts = '--hidden --vimgrep --smart-case'
 let g:clap_theme = 'material'
 let g:clap_layout = {
   \ 'width': '80%',
@@ -34,7 +34,7 @@ let g:clap_fuzzy_match_hl_groups = [
 " Keybindings
 nmap <silent><silent><Leader><Space> :Clap<CR>
 nmap <silent><Leader>,, :Clap!! files
-  \ ++finder=rg --files --follow --hidden --no-ignore -g !.git/ -g !node_modules/<CR>
+  \ ++finder=rg --files --follow --hidden --no-ignore -g '!.git/' -g '!node_modules/'<CR>
 nmap <silent><Leader>,. :Clap!! git_files<CR>
 nmap <silent><Leader>,g :Clap!! git_diff_files<CR>
 nmap <silent><Leader>,/ :Clap!! grep<CR>
