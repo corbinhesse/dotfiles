@@ -42,3 +42,5 @@ nmap <silent><Leader>,b :Clap!! buffers<CR>
 
 autocmd FileType clap_input inoremap <silent> <buffer> <C-n> <C-R>=clap#navigation#linewise('down')<CR>
 autocmd FileType clap_input inoremap <silent> <buffer> <C-p> <C-R>=clap#navigation#linewise('up')<CR>
+autocmd FileType clap_input inoremap <silent> <buffer> <C-j> <NOP>
+autocmd FileType clap_input inoremap <silent> <buffer> <C-k> <NOP>
