@@ -94,4 +94,4 @@ hi link CocErrorLine DiffDelete
 hi link CocErrorSign Red
 hi link CocHintSign Blue
 hi link CocCodeLens LineNr
-hi link CocCursorRange DiffText
+hi link CocCursorRange DiffDelete
