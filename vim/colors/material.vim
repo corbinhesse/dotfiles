@@ -368,8 +368,8 @@ call s:SetHighlight('markdownUrlTitle', s:violet, '', '')
 call s:SetHighlight('vimUserFunc', s:fg, '', '')
 
 " vim-fugitive
-call s:SetHighlight('diffAdded', s:green, '', '')
-call s:SetHighlight('diffRemoved', s:red, '', '')
+call s:SetHighlight('diffAdded', s:green, s:green_diff, '')
+call s:SetHighlight('diffRemoved', s:red, s:red_diff, '')
 call s:SetHighlight('diffSubname', s:fg, '', '')
 call s:SetHighlight('diffIndexLine', s:gray500, '', '')
 call s:SetHighlight('diffFile', s:gray500, '', '')
@@ -399,6 +399,12 @@ call s:SetHighlight('ClapLinNrColumn', s:teal, '', '')
 call s:SetHighlight('ClapLineNr', s:orange, '', '')
 call s:SetHighlight('ClapIcon', s:gray800, '', '')
 call s:SetHighlight('ClapIconUnknown', s:gray800, '', '')
+" Buffers
+call s:SetHighlight('ClapBuffersNumberBracket', s:black, '', '')
+call s:SetHighlight('ClapBuffersNumber', s:orange, '', '')
+call s:SetHighlight('ClapBuffersFsize', s:gray500, '', '')
+call s:SetHighlight('ClapBuffersLnum', s:teal, '', '')
+call s:SetHighlight('ClapBuffersFname', s:gray200, '', '')
 
 " coc-smartf
 augroup Smartf
