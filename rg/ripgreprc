@@ -3,4 +3,4 @@
 -g=!.git/
 -g=!node_modules/
 -g=!*.lock
--g=!*-lock.json
+-g=!*lock.json

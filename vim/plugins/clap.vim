@@ -7,7 +7,7 @@ let g:clap_insert_mode_only = 1
 let g:clap_prompt_format = '%spinner% %provider_id%: '
 let g:clap_provider_grep_blink = [0,0]
 let g:clap_provider_grep_enable_icon = 0
-let g:clap_provider_grep_opts = '--hidden --vimgrep --smart-case'
+let g:clap_provider_grep_opts = '--hidden --vimgrep --smart-case -g !*.lock -g !node_modules/ -g !.git/'
 let g:clap_theme = 'material'
 let g:clap_layout = {
   \ 'width': '80%',
@@ -44,3 +44,5 @@ autocmd FileType clap_input inoremap <silent> <buffer> <C-n> <C-R>=clap#navigati
 autocmd FileType clap_input inoremap <silent> <buffer> <C-p> <C-R>=clap#navigation#linewise('up')<CR>
 autocmd FileType clap_input inoremap <silent> <buffer> <C-j> <NOP>
 autocmd FileType clap_input inoremap <silent> <buffer> <C-k> <NOP>
+
+autocmd User ClapOnExit call lightline#update()

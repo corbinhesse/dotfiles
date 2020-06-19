@@ -5,5 +5,5 @@ let g:prettier#autoformat = 0
 let g:prettier#config#semi = 'false'
 
 " Keybindings
-vmap <leader>p :PrettierPartial<CR>
-nmap <leader>p :Prettier<CR>
+vmap <silent><leader>p :PrettierPartial<CR>
+nmap <silent><leader>p :Prettier<CR>
