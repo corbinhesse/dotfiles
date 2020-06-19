@@ -1,10 +1,10 @@
 snippet prettier "Prettier Config File" b
-// prettier.config.js
-module.exports = {
-	semi: false,
-	singleQuote: true,
-	tabWidth: 2,
-	trailingComma: 'es5',
+{
+	"semi": false,
+	"singleQuote": true,
+	"tabWidth": 2,
+	"trailingComma": "es5",
+	"arrowParens": "always"
 }
 endsnippet
 
@@ -28,5 +28,5 @@ switch (${1:value}) {
 endsnippet
 
 snippet lambda "Lambda Function" w
-($0) => {$1}
+($1) => {$2}
 endsnippet

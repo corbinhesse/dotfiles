@@ -1,3 +1,4 @@
+--smart-case
 --colors=path:fg:green
 --colors=line:fg:yellow
 -g=!.git/

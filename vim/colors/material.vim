@@ -406,6 +406,10 @@ call s:SetHighlight('ClapBuffersFsize', s:gray500, '', '')
 call s:SetHighlight('ClapBuffersLnum', s:teal, '', '')
 call s:SetHighlight('ClapBuffersFname', s:gray200, '', '')
 
+" IndentGuide
+call s:SetHighlight('IndentGuidesOdd', s:gray800, s:gray1000, '')
+call s:SetHighlight('IndentGuidesEven', 'none', 'none', '')
+
 " coc-smartf
 augroup Smartf
   autocmd User SmartfEnter :call s:SetHighlight('Conceal', s:bg, s:caret, '')

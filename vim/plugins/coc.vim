@@ -89,6 +89,10 @@ nmap <silent>]c <Plug>(coc-git-nextchunk)
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 
+" Snippets
+let g:coc_snippet_next = '<TAB>'
+let g:coc_snippet_prev = '<S-TAB>'
+
 " Highlights
 hi link CocErrorLine DiffDelete
 hi link CocErrorSign Red

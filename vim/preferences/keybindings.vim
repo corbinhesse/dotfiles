@@ -31,6 +31,10 @@ nnoremap \| <C-W>\|
 nnoremap _ <C-W>_
 nnoremap + <C-W>=
 
+" Command pagination
+cnoremap <C-K> <Up>
+cnoremap <C-J> <Down>
+
 " Scroll
 set scrolloff=1
 set sidescrolloff=5
