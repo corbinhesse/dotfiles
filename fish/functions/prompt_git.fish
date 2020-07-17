@@ -9,17 +9,11 @@ function prompt_git --description 'Print git branch'
   set -l is_ahead
   set -l is_behind
   set -l index (command git status --porcelain 2>/dev/null -b)
-  set -l trimmed_index (string split \n $index | string sub --start 1 --length 2)
   set -l git_dirty_status (command git status --porcelain)
 
-  # Change color if dirty or staged
+  # Change color if dirty
   if test -n "$git_dirty_status"
     set_color red
-    for i in $trimmed_index
-      if test (string match '*A*' $i)
-        set_color yellow
-      end
-    end
   else
     set_color green
   end
@@ -41,7 +35,7 @@ function prompt_git --description 'Print git branch'
       echo -n '↓'
     end
     if test "$is_ahead" = "true"
-      set_color $fish_color_teal
+      set_color blue
       echo -n '↑'
     end
     set_color normal
