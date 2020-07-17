@@ -31,6 +31,7 @@ if !exists("*Term")
   function! Term() abort
     :tabnew
     :0tabm
+    setlocal shell=/usr/local/bin/fish
     :terminal
   endfunction
   nnoremap <silent><Leader>t :call Term()<CR>
@@ -44,6 +45,7 @@ if !exists("*SourceConfig")
   command! Config call SourceConfig()
 endif
 
+" Clap remove floating window
 if !exists("*MyClapOnEnter")
   function! MyClapOnEnter() abort
     augroup ClapEnsureAllClosed
@@ -55,4 +57,9 @@ endif
 
 augroup Clap
   autocmd User ClapOnEnter call MyClapOnEnter()
+augroup end
+
+" Fish syntax
+augroup Fish
+  autocmd BufNewFile,BufRead *.fish set filetype=zsh
 augroup END

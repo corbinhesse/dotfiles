@@ -31,4 +31,5 @@ set mouse=nv
 set updatetime=250
 
 " Shell
-set shell=/bin/zsh
+set shell=/bin/bash
+" set shell=/usr/local/bin/zsh
