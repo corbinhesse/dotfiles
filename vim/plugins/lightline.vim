@@ -13,8 +13,12 @@ let g:lightline = {
   \ 'tab_component_function': {
     \ 'filename': 'LightlineTabName',
   \ },
+  \ 'component_function': {
+    \ 'gitBranch': 'FugitiveHead',
+    \ 'nodeVersion': 'LightlineNode'
+  \ },
   \ 'subseparator': { 'left': '', 'right': '' },
-  \ 'tabline': { 'right': [] },
+  \ 'tabline': { 'right': [['nodeVersion'],['gitBranch']] },
   \ 'active': {
     \ 'left': [
       \ [ 'modified' ],
@@ -61,4 +65,9 @@ function! LightlineTabName(n) abort
     \ : fileName =~ 'coc-explorer' ? singleDirectory
     \ : fileName =~ '/' ? singleDirectoryFileName
     \ : ('' != fileName ? fileName : '[No Name]')
+endfunction
+
+" node version
+function! LightlineNode() abort
+  return systemlist('node -v')[0]
 endfunction

@@ -31,6 +31,7 @@ if !exists("*Term")
   function! Term() abort
     :tabnew
     :0tabm
+    setlocal nonumber
     setlocal shell=/usr/local/bin/fish
     :terminal
   endfunction

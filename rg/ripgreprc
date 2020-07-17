@@ -3,5 +3,7 @@
 --colors=line:fg:yellow
 -g=!.git/
 -g=!node_modules/
+-g=!build/
+-g=!dist/
 -g=!*.lock
 -g=!*lock.json

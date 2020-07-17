@@ -16,7 +16,9 @@ set softtabstop=2
 set shiftwidth=2
 
 " Hidden characters
-set listchars=tab:>\ ,trail:-,nbsp:+,space:⋅,eol:¬
+set nolist
+set listchars=tab:>\ ,trail:-,nbsp:+,space:•
+" set listchars=tab:>\ ,trail:-,nbsp:+,space:⋅,eol:¬
 
 " Do not wrap long horizontal lines
 set linebreak
@@ -28,7 +30,7 @@ set ignorecase
 set smartcase
 
 " Linenumbers
-set nonumber norelativenumber
+set number norelativenumber
 set numberwidth=1
 
 " Cursor line
@@ -62,3 +64,7 @@ set winwidth=36
 set winminwidth=6
 set winminheight=0
 set winheight=6
+set winblend=10
+
+" Tabline
+set showtabline=2
