@@ -1,6 +1,11 @@
 # node/fnm version
 function prompt_node --description 'Print node version'
-  set -l prefix ' v'
+  # Exit if there is not a package.json file
+  if not test -e ./package.json
+    return
+  end
+
+  set -l prefix ' '
   set -l node_system_version (string replace -a 'v' '' (node -v))
   set -l node_project_version ''
 
@@ -17,8 +22,8 @@ function prompt_node --description 'Print node version'
     else
       # When node version matches project
       if [ "$node_system_version" = $node_project_version ]
-        set_color green
-        echo -n $prefix$node_system_version
+        set_color $fish_color_teal
+        echo -n $prefix$node_system_version'rc'
       else
         set_color red
         echo -n $prefix$node_project_version

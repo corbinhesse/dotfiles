@@ -15,10 +15,11 @@ let g:lightline = {
   \ },
   \ 'component_function': {
     \ 'gitBranch': 'FugitiveHead',
-    \ 'nodeVersion': 'LightlineNode'
+    \ 'nodeVersion': 'LightlineNode',
+    \ 'packageVersion': 'LightlinePackageVersion'
   \ },
   \ 'subseparator': { 'left': '', 'right': '' },
-  \ 'tabline': { 'right': [['nodeVersion'],['gitBranch']] },
+  \ 'tabline': { 'right': [['nodeVersion'],['packageVersion'],['gitBranch']] },
   \ 'active': {
     \ 'left': [
       \ [ 'modified' ],
@@ -70,4 +71,12 @@ endfunction
 " node version
 function! LightlineNode() abort
   return systemlist('node -v')[0]
+endfunction
+
+" package version
+function! LightlinePackageVersion() abort
+  if filereadable("./package.json")
+    return systemlist("node -p \"require(\'./package.json\').version\"")[0]
+  endif
+  return ''
 endfunction

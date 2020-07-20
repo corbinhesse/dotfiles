@@ -11,4 +11,7 @@ function fish_user_key_bindings
   bind -M insert \cn history-prefix-search-forward
   bind -M default \cp history-search-backward
   bind -M default \cn history-search-forward
+
+  # Alt+Delete kill word
+  bind -M insert \e\x7F backward-kill-word
 end
