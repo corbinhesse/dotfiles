@@ -19,7 +19,7 @@ let g:lightline = {
     \ 'packageVersion': 'LightlinePackageVersion'
   \ },
   \ 'subseparator': { 'left': '', 'right': '' },
-  \ 'tabline': { 'right': [['nodeVersion'],['packageVersion'],['gitBranch']] },
+  \ 'tabline': { 'right': [['gitBranch']] },
   \ 'active': {
     \ 'left': [
       \ [ 'modified' ],
@@ -66,17 +66,4 @@ function! LightlineTabName(n) abort
     \ : fileName =~ 'coc-explorer' ? singleDirectory
     \ : fileName =~ '/' ? singleDirectoryFileName
     \ : ('' != fileName ? fileName : '[No Name]')
-endfunction
-
-" node version
-function! LightlineNode() abort
-  return systemlist('node -v')[0]
-endfunction
-
-" package version
-function! LightlinePackageVersion() abort
-  if filereadable("./package.json")
-    return systemlist("node -p \"require(\'./package.json\').version\"")[0]
-  endif
-  return ''
 endfunction

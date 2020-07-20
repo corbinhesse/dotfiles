@@ -57,15 +57,6 @@
   "sql.lintOnSave": true,
   "suggest.enablePreview": true,
   "suggest.maxCompleteItemCount": 50,
-  "tailwindCSS.emmetCompletions": true,
-  "tailwindCSS.jsLanguages": [
-    "javascript",
-    "javascriptreact",
-    "reason",
-    "typescriptreact",
-    "vue"
-  ],
-  "tailwindCSS.cssLanguages": ["css", "postcss", "sass", "scss", "vue"],
   "tsserver.formatOnType": false,
   "vetur.experimental.templateInterpolationService": true,
   "vetur.format.defaultFormatter.html": "prettier",

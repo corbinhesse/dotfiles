@@ -15,11 +15,7 @@ if (exists('g:lightline'))
   let s:palette.tabline.left = [ [ g:material_colorscheme_map.gray600, g:material_colorscheme_map.bg ] ]
   let s:palette.tabline.middle = [ [ g:material_colorscheme_map.gray600, g:material_colorscheme_map.bg ] ]
   let s:palette.tabline.tabsel = [ [ g:material_colorscheme_map.gray100, g:material_colorscheme_map.bg ] ]
-  let s:palette.tabline.right = [
-    \ [ g:material_colorscheme_map.teal, g:material_colorscheme_map.bg ],
-    \ [ g:material_colorscheme_map.brown, g:material_colorscheme_map.bg ],
-    \ [ g:material_colorscheme_map.gray300, g:material_colorscheme_map.bg ]
-  \ ]
+  let s:palette.tabline.right = [ [ g:material_colorscheme_map.gray600, g:material_colorscheme_map.bg ] ]
 
   let g:lightline#colorscheme#material#palette = lightline#colorscheme#fill(s:palette)
 endif
