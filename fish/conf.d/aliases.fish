@@ -9,6 +9,9 @@ alias dot "cd ~/.dotfiles"
 alias l "tree --dirsfirst --noreport -a -L 1"
 alias tree "tree --dirsfirst -I node_modules"
 
+# man
+alias man "viman"
+
 # git
 alias g "git"
 alias gaa "git add --all"
@@ -23,6 +26,7 @@ alias gcob "git checkout -b"
 alias gcod "git checkout develop"
 alias gcom "git checkout master"
 alias gd "git diff"
+alias gds "git diff --stat"
 alias gfa "git fetch --all --prune"
 alias gl "git pull"
 alias glu "git pull --rebase"
@@ -38,6 +42,7 @@ alias groh "git reset origin/master --hard"
 alias grv "git remote -v"
 alias gsearch "git log -S"
 alias gst "git status"
+alias gsts "git status -s"
 alias gt "git tag"
 alias gta "git tag -a"
 

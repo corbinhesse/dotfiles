@@ -4,7 +4,7 @@ function prompt_directory --description 'Print directory with vim indications'
   set -l prompt_with_vim_color (
     switch $fish_bind_mode
       case insert
-        set_color magenta
+        set_color blue
       case '*'
         set_color brblack
     end

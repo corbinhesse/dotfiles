@@ -15,8 +15,6 @@ let g:lightline = {
   \ },
   \ 'component_function': {
     \ 'gitBranch': 'FugitiveHead',
-    \ 'nodeVersion': 'LightlineNode',
-    \ 'packageVersion': 'LightlinePackageVersion'
   \ },
   \ 'subseparator': { 'left': '', 'right': '' },
   \ 'tabline': { 'right': [['gitBranch']] },
