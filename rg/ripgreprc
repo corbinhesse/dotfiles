@@ -1,5 +1,5 @@
 --smart-case
---colors=path:fg:green
+--colors=path:fg:magenta
 --colors=line:fg:yellow
 -g=!.git/
 -g=!node_modules/

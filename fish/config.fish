@@ -4,7 +4,10 @@ set --export DOTFILES "$HOME/.dotfiles"
 set --export PATH "$PATH:$DOTFILES/bin"
 set --export PATH "$PATH:/usr/local/sbin"
 set --export PATH "$PATH:/usr/local/opt/mysql@5.7/bin"
+
+# Application Variables
 set --export RIPGREP_CONFIG_PATH "$HOME/.ripgreprc"
+set --export TCELL_TRUECOLOR disable # lab ci view
 
 # Remove greeting
 set fish_greeting
