@@ -18,7 +18,7 @@ set shiftwidth=2
 " Hidden characters
 set nolist
 set listchars=tab:>\ ,trail:-,nbsp:+,space:•
-" set listchars=tab:>\ ,trail:-,nbsp:+,space:⋅,eol:¬
+" set listchars=tab:<->\ ,trail:-,nbsp:+,space:⋅,eol:¬
 
 " Do not wrap long horizontal lines
 set linebreak
@@ -63,8 +63,11 @@ set foldopen-=hor
 set winwidth=36
 set winminwidth=6
 set winminheight=0
-set winheight=6
 set winblend=10
 
 " Tabline
 set showtabline=2
+
+" Scroll
+set scrolloff=1
+set sidescrolloff=5

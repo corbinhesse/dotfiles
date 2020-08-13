@@ -9,7 +9,6 @@ colorscheme material
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
 source ~/.vim/plugins/coc.vim
-source ~/.vim/plugins/clap.vim
 source ~/.vim/plugins/completion.vim
 source ~/.vim/plugins/editorconfig.vim
 source ~/.vim/plugins/git.vim

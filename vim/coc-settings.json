@@ -1,15 +1,17 @@
 {
   "coc.preferences.bracketEnterImprove": true,
-  "coc.preferences.hoverTarget": "float",
   "coc.preferences.formatOnSaveFiletypes": [],
-  "coc.preferences.jumpCommand": "vsplit",
+  "coc.preferences.hoverTarget": "float",
+  "coc.preferences.jumpCommand": "drop",
+
   "codeLens.enable": true,
+
   "diagnostic.errorSign": "",
   "diagnostic.hintSign": "",
   "diagnostic.infoSign": "",
   "diagnostic.warningSign": "",
+
   "explorer.file.child.template": " [indent][selection][filename omitCenter 1][readonly]",
-  "explorer.icon.selected": "* ",
   "explorer.file.column.indent.chars": "  ",
   "explorer.file.column.indent.indentLine": true,
   "explorer.file.hiddenRules": {
@@ -18,6 +20,7 @@
     "patternMatches": ["^\\.git$", "^\\.DS_Store", "^node_modules"]
   },
   "explorer.file.root.template": "[root]",
+  "explorer.icon.selected": "* ",
   "explorer.openAction.strategy": "select",
   "explorer.previewAction.onHover": false,
   "explorer.sources": [
@@ -27,7 +30,8 @@
     }
   ],
   "explorer.width": 36,
-  "git.addGBlameToVirtualText": false,
+
+  "git.addGBlameToVirtualText": true,
   "git.addedSign.hlGroup": "Green",
   "git.addedSign.text": "▎",
   "git.changeRemovedSign.hlGroup": "Orange",
@@ -35,36 +39,53 @@
   "git.changedSign.hlGroup": "Yellow",
   "git.changedSign.text": "▎",
   "git.command": "git",
+  "git.enableGutters": true,
   "git.removedSign.hlGroup": "Red",
   "git.removedSign.text": "▁",
+  "git.showCommitInFloating": false,
   "git.topRemovedSign.hlGroup": "Red",
   "git.topRemovedSign.text": "▔",
   "git.virtualTextPrefix": "  ",
+
+  "list.indicator": "▸",
+  "list.insertMappings": {
+    "*": "do:toggle",
+    "<C-t>": "action:tabe",
+    "<C-v>": "action:vsplit",
+    "<C-w>": "action:preview"
+  },
+  "list.maxHeight": 20,
+  "list.nextKeymap": "<C-n>",
+  "list.previousKeymap": "<C-p>",
+  "list.source.files.args": ["--hidden", "--files", "--no-ignore"],
+  "lists.disabledLists": ["colors"],
+
   "javascript.format.insertSpaceAfterCommaDelimiter": true,
   "javascript.format.insertSpaceAfterConstructor": true,
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.preferences.quoteStyle": "single",
   "javascript.suggest.completeFunctionCalls": true,
   "javascript.suggestionActions.enabled": true,
+
+  "prettier.arrowParens": "always",
   "prettier.eslintIntegration": true,
   "prettier.formatterPriority": 1,
   "prettier.semi": false,
   "prettier.singleQuote": true,
+
   "signature.hideOnTextChange": true,
   "signature.preferShownAbove": false,
-  "smartf.timeout": 2000,
-  "smartf.wordJump": false,
+
   "snippets.userSnippetsDirectory": "~/.vim/snippets",
+
   "sql.lintOnChange": true,
   "sql.lintOnSave": true,
+
+  "suggest.enablePreselect": true,
   "suggest.enablePreview": true,
   "suggest.maxCompleteItemCount": 50,
+
   "tsserver.formatOnType": false,
-  "vetur.experimental.templateInterpolationService": true,
-  "vetur.format.defaultFormatter.html": "prettier",
-  "vetur.format.defaultFormatter.css": "prettier",
-  "vetur.format.defaultFormatter.scss": "prettier",
-  "vetur.format.defaultFormatter.postcss": "prettier",
-  "vetur.format.defaultFormatter.js": "prettier",
+
   "yank.enableCompletion": false
 }

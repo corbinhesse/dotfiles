@@ -35,10 +35,6 @@ nnoremap + <C-W>=
 cnoremap <C-K> <Up>
 cnoremap <C-J> <Down>
 
-" Scroll
-set scrolloff=1
-set sidescrolloff=5
-
 " Remove Search
 nmap <silent><Leader>/ :nohlsearch<CR>
 
