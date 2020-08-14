@@ -102,6 +102,8 @@ hi link CocHintSign Blue
 hi link CocCodeLens LineNr
 hi link CocCursorRange DiffDelete
 hi link CocHighlightText PmenuThumb
+hi link CocWarningSign Yellow
+hi link CocInfoSign Blue
 hi link CocGrepLine Gray200
 hi link CocSelectedText Red
 hi link CocSelectedLine Blue

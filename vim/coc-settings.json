@@ -56,7 +56,6 @@
   "list.nextKeymap": "<C-n>",
   "list.previousKeymap": "<C-p>",
   "list.source.files.args": ["--hidden", "--files", "--no-ignore"],
-  "lists.disabledLists": ["colors"],
 
   "javascript.format.insertSpaceAfterCommaDelimiter": true,
   "javascript.format.insertSpaceAfterConstructor": true,

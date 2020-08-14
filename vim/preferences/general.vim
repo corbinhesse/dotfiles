@@ -28,7 +28,7 @@ set wildmode=full,full
 set mouse=nv
 
 " Update time
-set updatetime=250
+set updatetime=0
 
 " Shell
 set shell=/bin/bash
