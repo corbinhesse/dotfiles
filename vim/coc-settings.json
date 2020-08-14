@@ -4,8 +4,6 @@
   "coc.preferences.hoverTarget": "float",
   "coc.preferences.jumpCommand": "drop",
 
-  "codeLens.enable": true,
-
   "diagnostic.errorSign": "",
   "diagnostic.hintSign": "",
   "diagnostic.infoSign": "",

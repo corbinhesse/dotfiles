@@ -4,7 +4,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Extensions
 let g:coc_global_extensions = [
   \ 'coc-css',
+  \ 'coc-eslint',
   \ 'coc-explorer',
+  \ 'coc-highlight',
   \ 'coc-git',
   \ 'coc-json',
   \ 'coc-lists',
@@ -28,13 +30,14 @@ nmap <silent><leader><leader>. :CocList gfiles<CR>
 nmap <silent><leader><leader>g :CocList --auto-preview gstatus<CR>
 nmap <silent><leader><leader>/ :CocList grep<CR>
 nmap <silent><leader><leader>b :CocList buffers<CR>
-nmap <silent><leader><leader>d :CocList diagnostics<CR>
+nmap <silent><leader><leader>d :CocList --auto-preview diagnostics<CR>
 
 nmap <silent><leader>ca :CocAction<CR>
 xmap <silent><leader>ca <Plug>(coc-codeaction-selected)
-nmap <silent><leader>cc <Plug>(coc-codelens-action)
-nmap <silent><leader>ci :call CocActionAsync('organizeImport')<CR>
+nmap <silent><leader>cc :call CocAction('colorPresentation')<CR>
 nmap <silent><leader>cg :CocCommand git.chunkInfo<CR>
+nmap <silent><leader>ci :call CocActionAsync('organizeImport')<CR>
+nmap <silent><leader>cl <Plug>(coc-codelens-action)
 nmap <silent><leader>cr <Plug>(coc-refactor)
 nmap <silent><leader>cq :CocFix<CR>
 xmap <silent><leader>cq :CocFix<CR>
@@ -93,7 +96,7 @@ function! s:show_documentation()
 endfunction
 
 " Highlights
-hi link CocErrorLine DiffDelete
+" hi link CocErrorLine DiffDelete
 hi link CocErrorSign Red
 hi link CocHintSign Blue
 hi link CocCodeLens LineNr
@@ -102,3 +105,4 @@ hi link CocHighlightText PmenuThumb
 hi link CocGrepLine Gray200
 hi link CocSelectedText Red
 hi link CocSelectedLine Blue
+hi link CocUnderline Underline
