@@ -214,145 +214,180 @@ hi link gitcommitDiscardedArrow gitcommitDiscardedFile
 hi link gitcommitSelectedArrow gitcommitSelectedFile
 hi link gitcommitUnmergedArrow gitcommitUnmergedFile
 
-" Javascript
-call s:SetHighlight('javaScriptBraces', s:fg, '', '')
-call s:SetHighlight('javaScriptNull', s:orange, '', '')
-call s:SetHighlight('javaScriptIdentifier', s:purple, '', '')
-call s:SetHighlight('javaScriptNumber', s:orange, '', '')
-call s:SetHighlight('javaScriptRequire', s:cyan, '', '')
-call s:SetHighlight('javaScriptReserved', s:purple, '', '')
-
-" pangloss/vim-javascript
 call s:SetHighlight('jsArrowFunction', s:purple, '', '')
-call s:SetHighlight('jsAsyncKeyword', s:purple, '', '')
-call s:SetHighlight('jsBraces', s:gray300, '', '')
-call s:SetHighlight('jsBrackets', s:gray300, '', '')
+call s:SetHighlight('typescriptArrowFunc', s:purple, '', '')
+call s:SetHighlight('typescriptArrowFuncDef', s:purple, '', '')
+call s:SetHighlight('jsArrowFuncArgs', s:pink, '', '')
+call s:SetHighlight('typescriptArrowFuncArg', s:pink, '', '')
+call s:SetHighlight('typescriptCall', s:pink, '', '')
+call s:SetHighlight('typescriptTry', s:purple, '', '')
+call s:SetHighlight('typescriptExceptions', s:purple, '', '')
+
+call s:SetHighlight('jsAsyncKeyword', s:purple, '', 'italic')
+call s:SetHighlight('jsForAwait', s:purple, '', 'italic')
+call s:SetHighlight('typescriptAsyncFuncKeyword', s:purple, '', 'italic')
 call s:SetHighlight('jsClassBraces', s:yellow, '', '')
 call s:SetHighlight('jsClassKeyword', s:purple, '', '')
 call s:SetHighlight('jsClassDefinition', s:yellow, '', '')
 call s:SetHighlight('jsClassNoise', s:gray300, '', '')
 call s:SetHighlight('jsDocParam', s:green, '', '')
 call s:SetHighlight('jsDocTags', s:gray300, '', '')
-call s:SetHighlight('jsDot', s:gray300, '', '')
-call s:SetHighlight('jsForAwait', s:purple, '', '')
+
 call s:SetHighlight('jsFlowArgumentDef', s:yellow, '', '')
 call s:SetHighlight('jsFrom', s:teal, '', '')
 call s:SetHighlight('jsImport', s:teal, '', 'italic')
+call s:SetHighlight('typescriptImport', s:teal, '', 'italic')
 call s:SetHighlight('jsExport', s:cyan, '', 'italic')
+call s:SetHighlight('typescriptExport', s:cyan, '', 'italic')
 call s:SetHighlight('jsExportDefault', s:purple, '', '')
-call s:SetHighlight('jsFuncArgs', s:red, '', '')
+call s:SetHighlight('jsFuncArgs', s:pink, '', '')
 call s:SetHighlight('jsFuncArgOperator', s:purple, '', '')
 call s:SetHighlight('jsFuncBraces', s:gray300, '', '')
 call s:SetHighlight('jsFuncCall', s:blue, '', '')
-call s:SetHighlight('jsFuncParens', s:gray300, '', '')
+call s:SetHighlight('typescriptFuncCallArg', s:fg, '', '')
+" call s:SetHighlight('typescriptFuncCall', s:blue, '', '')
+call s:SetHighlight('typescriptGlobal', s:yellow, '', '')
 call s:SetHighlight('jsFunction', s:purple, '', '')
+
 call s:SetHighlight('jsGlobalObjects', s:yellow, '', '')
-call s:SetHighlight('typescriptGlobalObjects', s:yellow, '', '')
 call s:SetHighlight('jsGlobalNodeObjects', s:yellow, '', '')
 call s:SetHighlight('jsIfElseBraces', s:violet, '', '')
 call s:SetHighlight('jsNull', s:orange, '', '')
 call s:SetHighlight('jsStorageClass', s:purple, '', '')
+call s:SetHighlight('typescriptVariable', s:purple, '', '')
 call s:SetHighlight('typescriptStorageClass', s:purple, '', '')
-call s:SetHighlight('jsTemplateBraces', s:teal, '', '')
-call s:SetHighlight('jsTemplateExpression', s:cyan, '', '')
 call s:SetHighlight('jsThis', s:pink, '', 'italic')
-call s:SetHighlight('jsOperator', s:cyan, '', '')
-call s:SetHighlight('typescriptOpSymbols', s:cyan, '', '')
-call s:SetHighlight('typescriptLogicSymbols', s:cyan, '', '')
+
 call s:SetHighlight('jsObjectBraces', s:gray200, '', '')
 call s:SetHighlight('jsObjectColon', s:gray300, '', '')
+call s:SetHighlight('typescriptObjectColon', s:gray300, '', '')
 call s:SetHighlight('jsObjectSeparator', s:gray300, '', '')
 call s:SetHighlight('jsObjectKey', s:gray200, '', '')
-call s:SetHighlight('jsParens', s:gray300, '', '')
-call s:SetHighlight('jsSwitchColon', s:cyan, '', '')
-call s:SetHighlight('jsSwitchBraces', s:violet, '', '')
-call s:SetHighlight('jsDestructuringNoise', s:violet, '', '')
-call s:SetHighlight('jsDestructuringBlock', s:gray200, '', '')
-call s:SetHighlight('jsDestructuringBraces', s:violet, '', '')
-call s:SetHighlight('jsVariableDef', s:violet, '', '')
-call s:SetHighlight('jsUndefined', s:orange, '', '')
 
-" import/export
-call s:SetHighlight('typescriptReserved', s:teal, '', 'italic')
-call s:SetHighlight('jsImport', s:teal, '', 'italic')
+" operators
+call s:SetHighlight('jsOperator', s:cyan, '', '')
+call s:SetHighlight('jsSwitchColon', s:cyan, '', '')
+call s:SetHighlight('jsTemplateBraces', s:teal, '', '')
+call s:SetHighlight('jsTemplateExpression', s:cyan, '', '')
+call s:SetHighlight('typescriptAssign', s:cyan, '', '')
+call s:SetHighlight('typescriptUnaryOp', s:cyan, '', '')
+call s:SetHighlight('typescriptBinaryOp', s:cyan, '', '')
+call s:SetHighlight('typescriptTernaryOp', s:cyan, '', '')
+call s:SetHighlight('typescriptLogicSymbols', s:cyan, '', '')
+call s:SetHighlight('typescriptOpSymbols', s:cyan, '', '')
+call s:SetHighlight('typescriptTemplateSB', s:teal, '', '')
+call s:SetHighlight('typescriptObjectSpread', s:cyan, '', '')
+call s:SetHighlight('typescriptRestOrSpread', s:cyan, '', '')
+
+call s:SetHighlight('jsDestructuringBraces', s:violet, '', '')
+call s:SetHighlight('jsNull', s:orange, '', '')
+call s:SetHighlight('jsSwitchBraces', s:violet, '', '')
+call s:SetHighlight('jsUndefined', s:orange, '', '')
+call s:SetHighlight('jsVariableDef', s:violet, '', '')
+call s:SetHighlight('typescriptStringMethod', s:blue, '', '')
+call s:SetHighlight('typescriptArrayMethod', s:blue, '', '')
+call s:SetHighlight('typescriptBOMNavigatorProp', s:blue, '', '')
+call s:SetHighlight('typescriptBOMLocationMethod', s:blue, '', '')
+call s:SetHighlight('typescriptBOMWindowMethod', s:blue, '', '')
+call s:SetHighlight('typescriptBOMWindowProp', s:yellow, '', '')
+call s:SetHighlight('typescriptDOMDocMethod', s:blue, '', '')
+call s:SetHighlight('typescriptDOMFormProp', s:fg, '', '')
+call s:SetHighlight('typescriptPaymentShippingOptionProp', s:fg, '', '')
+call s:SetHighlight('typescriptConsoleMethod', s:blue, '', '')
+call s:SetHighlight('typescriptProp', s:blue, '', '')
+call s:SetHighlight('typescriptNull', s:orange, '', '')
+call s:SetHighlight('typescriptVariableDeclaration', s:violet, '', '')
+call s:SetHighlight('typescriptDestructureVariable', s:gray200, '', '')
+
+" import/export/statements
 call s:SetHighlight('jsExport', s:cyan, '', 'italic')
-call s:SetHighlight('jsModuleAs', s:purple, '', '')
-call s:SetHighlight('typescriptBraces', s:gray300, '', '')
+call s:SetHighlight('jsImport', s:teal, '', 'italic')
+call s:SetHighlight('jsModuleAs', s:violet, '', '')
 call s:SetHighlight('jsModuleBraces', s:gray300, '', '')
+call s:SetHighlight('jsReturn', s:cyan, '', 'italic')
+call s:SetHighlight('typescriptBraces', s:gray300, '', '')
+call s:SetHighlight('typescriptCastKeyword', s:violet, '', '')
+call s:SetHighlight('typescriptReserved', s:teal, '', 'italic')
+call s:SetHighlight('typescriptStatement', s:cyan, '', 'italic')
+call s:SetHighlight('typescriptStatementKeyword', s:cyan, '', 'italic')
 
 " noise
-call s:SetHighlight('typescriptEndColons', s:gray300, '', '')
+call s:SetHighlight('jsBraces', s:gray300, '', '')
+call s:SetHighlight('jsBrackets', s:gray300, '', '')
+call s:SetHighlight('jsDestructuringNoise', s:gray300, '', '')
+call s:SetHighlight('jsDot', s:gray300, '', '')
+call s:SetHighlight('jsFuncArgCommas', s:gray300, '', '')
+call s:SetHighlight('jsFuncParens', s:gray300, '', '')
 call s:SetHighlight('jsNoise', s:gray300, '', '')
-
-" statements
-call s:SetHighlight('typescriptStatement', s:cyan, '', 'italic')
-call s:SetHighlight('jsReturn', s:cyan, '', 'italic')
-
-" symbols
-call s:SetHighlight('typescriptParens', s:gray300, '', '')
+call s:SetHighlight('typescriptNoise', s:gray300, '', '')
 call s:SetHighlight('jsParens', s:gray300, '', '')
+call s:SetHighlight('typescriptDotNotation', s:gray300, '', '')
+call s:SetHighlight('typescriptEndColons', s:gray300, '', '')
+call s:SetHighlight('typescriptFuncComma', s:gray300, '', '')
+call s:SetHighlight('typescriptDestructureComma', s:gray300, '', '')
+call s:SetHighlight('typescriptObjectLabel', s:fg, '', '')
+call s:SetHighlight('typescriptParens', s:gray300, '', '')
+call s:SetHighlight('typescriptTypeAnnotation', s:gray300, '', '')
 
 " jsx & html
-call s:SetHighlight('htmlTagN', s:red, '', '')
-call s:SetHighlight('htmlTagName', s:red, '', '')
+call s:SetHighlight('htmlTitle', s:fg, '', '')
+call s:SetHighlight('htmlLink', s:violet, '', '')
+call s:SetHighlight('htmlTagN', s:orange, '', '')
+call s:SetHighlight('jsxTagName', s:orange, '', '')
+call s:SetHighlight('htmlTagName', s:orange, '', '')
 call s:SetHighlight('htmlSpecialTagName', s:red, '', '')
 call s:SetHighlight('jsxComponentName', s:red, '', '')
-call s:SetHighlight('jsxTagName', s:red, '', '')
-call s:SetHighlight('tsxCloseTagName', s:red, '', '')
-call s:SetHighlight('tsxTagName', s:red, '', '')
-call s:SetHighlight('tsxComponentName', s:red, '', '')
-call s:SetHighlight('tsxCloseComponentName', s:red, '', '')
+call s:SetHighlight('htmlArg', s:yellow, '', 'italic')
+call s:SetHighlight('jsxAttrib', s:yellow, '', 'italic')
+call s:SetHighlight('xmlAttrib', s:yellow, '', 'italic')
+call s:SetHighlight('jsxBraces', s:purple, '', '')
+call s:SetHighlight('htmlEndTag', s:blue, '', '')
+call s:SetHighlight('htmlTag', s:blue, '', '')
 call s:SetHighlight('jsxCloseString', s:blue, '', '')
 call s:SetHighlight('jsxPunct', s:blue, '', '')
-call s:SetHighlight('tsxCloseTag', s:blue, '', '')
-call s:SetHighlight('tsxTag', s:blue, '', '')
-call s:SetHighlight('htmlTag', s:blue, '', '')
-call s:SetHighlight('htmlEndTag', s:blue, '', '')
 call s:SetHighlight('xmlEndTag', s:blue, '', '')
 call s:SetHighlight('xmlTag', s:blue, '', '')
 call s:SetHighlight('xmlTagName', s:blue, '', '')
-call s:SetHighlight('vueSurroundingTag', s:blue, '', '')
+
+" React
 call s:SetHighlight('ReduxHooksKeywords', s:blue, '', '')
 call s:SetHighlight('ReduxKeywords', s:blue, '', '')
 
-" attribute
-call s:SetHighlight('jsxAttrib', s:yellow, '', 'italic')
-call s:SetHighlight('jsxBraces', s:purple, '', '')
-call s:SetHighlight('tsxAttributeBraces', s:purple, '', '')
+" Typescript
+call s:SetHighlight('typescriptBOM', s:fg, '', '')
+call s:SetHighlight('typescriptTypeReference', s:teal, '', '')
+call s:SetHighlight('typescriptTypeBracket', s:cyan, '', '')
+call s:SetHighlight('typescriptTypeBrackets', s:cyan, '', '')
+call s:SetHighlight('typescriptInterfaceName', s:teal, '', '')
+call s:SetHighlight('typescriptMember', s:fg, '', '')
+call s:SetHighlight('typescriptMemberOptionality', s:yellow, '', '')
+call s:SetHighlight('typescriptDefaultParam', s:cyan, '', '')
+call s:SetHighlight('typescriptIndexExpr', s:gray200, '', '')
+
 " Match Tag
 call s:SetHighlight('MatchTag', '', s:yellow_diff, 'bold')
 
 " JSON
 call s:SetHighlight('jsonBraces', s:fg, '', '')
+call s:SetHighlight('jsonKeyword', s:teal, '', '')
 
 " CSS
+call s:SetHighlight('cssAtRule', s:teal, '', '')
 call s:SetHighlight('cssAttrComma', s:fg, '', '')
-call s:SetHighlight('cssPseudoClassId', s:yellow, '', '')
 call s:SetHighlight('cssBraces', s:fg, '', '')
+call s:SetHighlight('cssBraces', s:gray300, '', '')
 call s:SetHighlight('cssClassName', s:yellow, '', '')
 call s:SetHighlight('cssClassNameDot', s:yellow, '', '')
 call s:SetHighlight('cssFunctionName', s:blue, '', '')
 call s:SetHighlight('cssIncludeKeyword', s:purple, '', '')
-call s:SetHighlight('cssTagName', s:red, '', '')
 call s:SetHighlight('cssMediaType', s:orange, '', '')
+call s:SetHighlight('cssNoise', s:gray300, '', '')
 call s:SetHighlight('cssProp', s:fg, '', '')
+call s:SetHighlight('cssPseudoClassId', s:yellow, '', '')
 call s:SetHighlight('cssSelectorOp', s:cyan, '', '')
 call s:SetHighlight('cssSelectorOp2', s:cyan, '', '')
-
-" HTML
-call s:SetHighlight('htmlLink', s:pink, '', '')
-call s:SetHighlight('htmlTitle', s:fg, '', '')
-call s:SetHighlight('htmlArg', s:yellow, '', 'italic')
-
-" XML
-call s:SetHighlight('xmlAttrib', s:yellow, '', 'italic')
-
-" PHP
-call s:SetHighlight('phpClass', s:yellow, '', '')
-call s:SetHighlight('phpType', s:purple, '', '')
-call s:SetHighlight('phpUseNamespaceSeparator', s:gray500, '', '')
-call s:SetHighlight('phpMethod', s:blue, '', '')
-call s:SetHighlight('phpFunction', s:blue, '', '')
+call s:SetHighlight('cssTagName', s:red, '', '')
+call s:SetHighlight('cssVendor', s:gray300, '', 'none')
 
 " Markdown
 call s:SetHighlight('markdownBold', s:white, '', 'bold')
@@ -376,9 +411,6 @@ call s:SetHighlight('markdownUrl', s:purple, '', '')
 call s:SetHighlight('markdownUrlTitleDelimiter', s:violet, '', '')
 call s:SetHighlight('markdownUrlTitle', s:violet, '', '')
 
-" Vim
-call s:SetHighlight('vimUserFunc', s:fg, '', '')
-
 " vim-fugitive
 call s:SetHighlight('diffAdded', s:green, s:green_diff, '')
 call s:SetHighlight('diffRemoved', s:red, s:red_diff, '')
@@ -395,41 +427,11 @@ call s:SetHighlight('fugitiveUnstagedModifier', s:gray500, '', '')
 call s:SetHighlight('fugitiveUntrackedHeading', s:red, '', '')
 call s:SetHighlight('fugitiveUntrackedModifier', s:gray500, '', '')
 
-" Clap
-call s:SetHighlight('ClapFile', s:gray200, '', 'none')
-call s:SetHighlight('ClapNoMatchesFound', s:gray500, '', '')
-call s:SetHighlight('ClapProviderId', s:teal, '', '')
-" Provider
-call s:SetHighlight('ClapProviderColon', s:gray500, '', '')
-call s:SetHighlight('ClapProviderAbout', s:gray200, '', '')
-" Grep
-call s:SetHighlight('ClapMatches', s:red, s:gray1000, '')
-call s:SetHighlight('ClapFuzzyMatches', s:red, s:cyan, '')
-call s:SetHighlight('ClapFpath', s:green, '', '')
-call s:SetHighlight('ClapColumn', s:teal, '', '')
-call s:SetHighlight('ClapLinNrColumn', s:teal, '', '')
-call s:SetHighlight('ClapLineNr', s:orange, '', '')
-call s:SetHighlight('ClapIcon', s:gray800, '', '')
-call s:SetHighlight('ClapIconUnknown', s:gray800, '', '')
-" Buffers
-call s:SetHighlight('ClapBuffersNumberBracket', s:black, '', '')
-call s:SetHighlight('ClapBuffersNumber', s:orange, '', '')
-call s:SetHighlight('ClapBuffersFsize', s:gray500, '', '')
-call s:SetHighlight('ClapBuffersLnum', s:teal, '', '')
-call s:SetHighlight('ClapBuffersFname', s:gray200, '', '')
-
 " IndentGuide
 call s:SetHighlight('IndentGuidesOdd', s:gray800, s:gray900,'')
 call s:SetHighlight('IndentGuidesEven', s:gray800, 'none', '')
 
-" coc-smartf
-augroup Smartf
-  autocmd User SmartfEnter :call s:SetHighlight('Conceal', s:bg, s:caret, '')
-  autocmd User SmartfLeave :call s:SetHighlight('Conceal', s:gray800, 'none', '')
-augroup end
-
 " CocExplorer
-call s:SetHighlight('CocExplorerNormal', s:red, 'none', '')
 call s:SetHighlight('CocExplorerIndentLine', s:gray800, 'none', '')
 call s:SetHighlight('CocExplorerFileRootName', s:purple, 'none', 'italic')
 call s:SetHighlight('CocExplorerFileDirectory', s:blue, 'none', '')

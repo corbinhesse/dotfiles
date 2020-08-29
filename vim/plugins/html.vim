@@ -13,5 +13,6 @@ let g:mta_filetypes = {
   \ 'javascript' : 1,
   \ 'typescript' : 1,
   \ 'typescriptreact' : 1,
+  \ 'typescript.tsx' : 1,
   \ 'xml' : 1,
 \ }

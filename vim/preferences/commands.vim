@@ -46,21 +46,10 @@ if !exists("*SourceConfig")
   command! Config call SourceConfig()
 endif
 
-" Clap remove floating window
-if !exists("*MyClapOnEnter")
-  function! MyClapOnEnter() abort
-    augroup ClapEnsureAllClosed
-      autocmd!
-      autocmd BufEnter,WinEnter,WinLeave * ++once call clap#floating_win#close()
-    augroup end
-  endfunction
-endif
-
-augroup Clap
-  autocmd User ClapOnEnter call MyClapOnEnter()
-augroup end
-
-" Fish syntax
-augroup Fish
+augroup SyntaxGroupCmd
   autocmd BufNewFile,BufRead *.fish set filetype=zsh
+  autocmd BufNewFile,BufRead *.*rc set filetype=json
+  autocmd BufNewFile,BufRead *.nvmrc set filetype=
+  " autocmd BufNewFile,BufRead *.tsx,*.jsx set syntax=typescript.tsx
+  autocmd BufNewFile,BufRead gitconfig* set filetype=gitconfig
 augroup END

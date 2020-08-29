@@ -15,6 +15,7 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-sql',
   \ 'coc-tsserver',
+  \ 'coc-tslint-plugin',
   \ 'coc-yaml',
   \ 'coc-yank',
 \ ]
@@ -31,6 +32,7 @@ nmap <silent><leader><leader>g :CocList --auto-preview gstatus<CR>
 nmap <silent><leader><leader>/ :CocList grep<CR>
 nmap <silent><leader><leader>b :CocList buffers<CR>
 nmap <silent><leader><leader>d :CocList --auto-preview diagnostics<CR>
+nmap <silent><leader><leader>o :CocList outline<CR>
 
 nmap <silent><leader>ca :CocAction<CR>
 xmap <silent><leader>ca <Plug>(coc-codeaction-selected)
@@ -83,7 +85,7 @@ nmap <silent> <C-c> <Plug>(coc-cursors-word)*
 xmap <silent> <C-c> y/\V<C-r>=escape(@",'/\')<CR><CR>gN<Plug>(coc-cursors-range)gn
 
 " Highlight symbols
-autocmd CursorHold * silent call CocActionAsync('highlight')
+" autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -96,7 +98,6 @@ function! s:show_documentation()
 endfunction
 
 " Highlights
-" hi link CocErrorLine DiffDelete
 hi link CocErrorSign Red
 hi link CocHintSign Blue
 hi link CocCodeLens LineNr
