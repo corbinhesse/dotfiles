@@ -1,0 +1,18 @@
+# Add the following code to an AppleScript App
+
+on run {input, parameters}
+
+	set filename to POSIX path of input
+
+	tell application "iTerm"
+		activate
+		tell the current window
+			create tab with default profile
+			tell the current session
+				write text "cd (dirname " & quote & filename & quote & ")"
+				write text "nvim " & quote & filename & quote
+			end tell
+		end tell
+	end tell
+
+end run
