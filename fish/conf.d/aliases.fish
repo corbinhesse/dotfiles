@@ -57,3 +57,6 @@ alias nr "npm run"
 alias nrd "npm run dev"
 alias nrt "npm run test"
 alias nrtw "npm run test:watch"
+
+# rg
+alias rgf "rg --files | rg"
