@@ -4,6 +4,7 @@ set --export DOTFILES "$HOME/.dotfiles"
 set --export PATH "$PATH:$DOTFILES/bin"
 set --export PATH "$PATH:/usr/local/sbin"
 set --export PATH "$PATH:/usr/local/opt/mysql@5.7/bin"
+set --export BAT_THEME 'material'
 
 # Application Variables
 set --export RIPGREP_CONFIG_PATH "$HOME/.ripgreprc"

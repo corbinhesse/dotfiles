@@ -46,6 +46,7 @@ xmap <silent><leader>cq :CocFix<CR>
 nmap <silent><leader>c/ <Plug>(coc-float-hide)
 
 nmap <silent><leader>e :CocCommand explorer --toggle<CR>
+nmap <silent><leader>r :CocCommand explorer --focus --no-toggle<CR>
 
 nmap <silent><leader>f :call CocActionAsync('format')<CR>
 xmap <silent><leader>f <Plug>(coc-format-selected)

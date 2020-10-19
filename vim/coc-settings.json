@@ -27,7 +27,7 @@
       "expand": true
     }
   ],
-  "explorer.width": 36,
+  "explorer.width": 30,
 
   "git.addGBlameToVirtualText": true,
   "git.addedSign.hlGroup": "Green",

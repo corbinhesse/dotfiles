@@ -16,7 +16,7 @@ source ~/.vim/plugins/html.vim
 source ~/.vim/plugins/indentline.vim
 source ~/.vim/plugins/javascript.vim
 source ~/.vim/plugins/lightline.vim
-" source ~/.vim/plugins/prettier.vim
+source ~/.vim/plugins/prettier.vim
 call plug#end()
 
 " Commands

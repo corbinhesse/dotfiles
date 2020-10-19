@@ -17,7 +17,7 @@ let g:lightline = {
     \ 'gitBranch': 'FugitiveHead',
   \ },
   \ 'subseparator': { 'left': '', 'right': '' },
-  \ 'tabline': { 'right': [['gitBranch']] },
+  \ 'tabline': { 'right': [] },
   \ 'active': {
     \ 'left': [
       \ [ 'modified' ],
