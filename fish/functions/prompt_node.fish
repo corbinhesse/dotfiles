@@ -21,7 +21,7 @@ function prompt_node --description 'Print node version'
       echo -n $prefix$node_system_version
     else
       # When node version matches project
-      if [ "$node_system_version" = $node_project_version ]
+      if string match -eq $node_project_version $node_system_version
         set_color $fish_color_teal
         echo -n $prefix$node_system_version'rc'
       else
