@@ -1,9 +1,11 @@
 --smart-case
 --colors=path:fg:magenta
 --colors=line:fg:yellow
--g=!.git/
--g=!node_modules/
--g=!build/
--g=!dist/
 -g=!*.lock
 -g=!*lock.json
+-g=!.git/
+-g=!build/
+-g=!coverage/
+-g=!dist/
+-g=!node_modules/
+-g=!public/

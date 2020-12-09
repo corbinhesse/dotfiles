@@ -15,6 +15,7 @@ install () {
     mkdir -p "$HOME/.vim/undo"
   fi
   pip3 install --user --upgrade pynvim
+  python3 -m pip install --user --upgrade pynvim
 }
 
 install

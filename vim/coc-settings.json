@@ -56,7 +56,6 @@
     "<C-w>": "action:preview",
     "<C-x>": "do:switch"
   },
-  "list.maxHeight": 20,
   "list.nextKeymap": "<C-n>",
   "list.previousKeymap": "<C-p>",
   "list.source.files.args": ["--hidden", "--files", "--no-ignore"],
@@ -93,5 +92,6 @@
 
   "tsserver.formatOnType": false,
 
-  "yank.enableCompletion": false
+  "yank.enableCompletion": false,
+  "yank.highlight.duration": 250
 }
