@@ -146,7 +146,7 @@ call s:SetHighlight('LineNr', s:gray700, '', '')
 call s:SetHighlight('MatchParen', '', s:gray800, 'bold')
 call s:SetHighlight('ModeMsg', s:green, '', '')
 call s:SetHighlight('MoreMsg', s:green, '', '')
-call s:SetHighlight('NonText', s:gray900, '', '')
+call s:SetHighlight('NonText', s:gray800, '', '')
 call s:SetHighlight('Normal', s:fg, 'none', '')
 call s:SetHighlight('NormalFloat', s:fg, s:gray1000, '')
 call s:SetHighlight('Pmenu', s:gray100, s:gray1000, '')
@@ -435,6 +435,10 @@ call s:SetHighlight('IndentGuidesEven', s:gray800, '#171F22', '')
 call s:SetHighlight('CocExplorerIndentLine', s:gray800, 'none', '')
 call s:SetHighlight('CocExplorerFileRootName', s:purple, 'none', 'italic')
 call s:SetHighlight('CocExplorerFileDirectory', s:blue, 'none', '')
+
+" CocList
+call s:SetHighlight('CocListMode', s:green, s:gray700, '')
+call s:SetHighlight('CocListPath', s:gray400, s:gray700, '')
 
 " zsh
 call s:SetHighlight('zshFunction', s:blue, '', '')
