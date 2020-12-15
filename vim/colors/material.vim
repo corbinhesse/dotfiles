@@ -432,9 +432,16 @@ call s:SetHighlight('IndentGuidesOdd', s:gray800, s:gray1000,'')
 call s:SetHighlight('IndentGuidesEven', s:gray800, '#171F22', '')
 
 " CocExplorer
+call s:SetHighlight('CocExplorerSelectUI', s:bg, s:caret, 'bold')
 call s:SetHighlight('CocExplorerIndentLine', s:gray800, 'none', '')
 call s:SetHighlight('CocExplorerFileRootName', s:purple, 'none', 'italic')
 call s:SetHighlight('CocExplorerFileDirectory', s:blue, 'none', '')
+call s:SetHighlight('CocExplorerGitAdded', s:green, 'none', '')
+call s:SetHighlight('CocExplorerGitUntracked', s:green, 'none', '')
+call s:SetHighlight('CocExplorerGitModified', s:yellow, 'none', '')
+call s:SetHighlight('CocExplorerGitIgnored', s:gray300, 'none', '')
+call s:SetHighlight('CocExplorerGitMixed', s:orange, 'none', '')
+call s:SetHighlight('CocExplorerFileDiagnosticError', s:red, 'none', 'italic')
 
 " CocList
 call s:SetHighlight('CocListMode', s:green, s:gray700, '')
