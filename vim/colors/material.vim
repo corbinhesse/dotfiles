@@ -440,7 +440,7 @@ call s:SetHighlight('CocExplorerGitAdded', s:green, 'none', '')
 call s:SetHighlight('CocExplorerGitUntracked', s:green, 'none', '')
 call s:SetHighlight('CocExplorerGitModified', s:yellow, 'none', '')
 call s:SetHighlight('CocExplorerGitIgnored', s:gray300, 'none', '')
-call s:SetHighlight('CocExplorerGitMixed', s:orange, 'none', '')
+call s:SetHighlight('CocExplorerGitMixed', s:yellow, 'none', '')
 call s:SetHighlight('CocExplorerFileDiagnosticError', s:red, 'none', 'italic')
 
 " CocList

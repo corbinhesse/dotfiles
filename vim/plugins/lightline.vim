@@ -9,6 +9,7 @@ let g:lightline = {
     \ 'lineCount': '%L',
     \ 'lineInfo': '%l:%c/%L',
     \ 'modified': '%{LightlineModified()}',
+    \ 'cocStatus': '%{StatusDiagnostic()}',
   \ },
   \ 'tab_component_function': {
     \ 'filename': 'LightlineTabName',
@@ -21,6 +22,7 @@ let g:lightline = {
   \ 'active': {
     \ 'left': [
       \ [ 'modified' ],
+      \ [ 'cocStatus' ],
       \ [ 'filePath' ],
     \ ],
     \ 'right': [
@@ -30,6 +32,7 @@ let g:lightline = {
   \ 'inactive': {
     \ 'left': [
       \ [ 'modified' ],
+      \ [ 'cocStatus' ],
       \ [ 'filePath' ],
     \ ],
     \ 'right': [
@@ -42,6 +45,16 @@ let g:lightline = {
 function! LightlineModified() abort
   let modified = &modified ? ' + ' : ''
   return modified
+endfunction
+
+function! StatusDiagnostic() abort
+  let info = get(b:, 'coc_diagnostic_info', {})
+  if empty(info) | return '' | endif
+  let msgs = []
+  if get(info, 'error', 0)
+    call add(msgs, '' . info['error'])
+  endif
+  return join(msgs, ' ')
 endfunction
 
 " filePath
