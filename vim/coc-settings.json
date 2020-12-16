@@ -58,6 +58,7 @@
   },
   "list.nextKeymap": "<C-n>",
   "list.previousKeymap": "<C-p>",
+  "list.matchHighlightGroup": "Red",
   "list.source.files.args": ["--hidden", "--files", "--no-ignore"],
 
   "javascript.format.insertSpaceAfterCommaDelimiter": true,
