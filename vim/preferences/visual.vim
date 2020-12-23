@@ -17,7 +17,7 @@ set shiftwidth=2
 
 " Hidden characters
 set list
-set listchars=tab:>\ ,trail:-,nbsp:+,space:•
+set listchars=tab:>\ ,trail:-,nbsp:+,space:⋅
 " set listchars=tab:<->\ ,trail:-,nbsp:+,space:⋅,eol:¬
 
 " Do not wrap long horizontal lines
