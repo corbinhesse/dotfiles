@@ -8,7 +8,7 @@ set termguicolors
 set autoindent
 
 " Expand tabs to spaces
-set expandtab
+set noexpandtab
 
 " Tabs equal two spaces
 set tabstop=2
@@ -17,8 +17,8 @@ set shiftwidth=2
 
 " Hidden characters
 set list
-set listchars=tab:>\ ,trail:-,nbsp:+,space:⋅
-" set listchars=tab:<->\ ,trail:-,nbsp:+,space:⋅,eol:¬
+set listchars=tab:→\ ,trail:-,nbsp:+,space:⋅
+" set listchars=tab:▏\ ,trail:-,nbsp:+,space:⋅
 
 " Do not wrap long horizontal lines
 set linebreak
