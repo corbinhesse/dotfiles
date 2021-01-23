@@ -192,7 +192,7 @@ call s:SetHighlight('Type', s:yellow, '', '')
 call s:SetHighlight('Structure', s:cyan, '', '')
 call s:SetHighlight('Special', s:violet, '', '')
 call s:SetHighlight('Underlined', s:blue, '', '')
-call s:SetHighlight('Underline', '', '', 'italic,underline')
+call s:SetHighlight('Underline', '', '', 'underline')
 call s:SetHighlight('Error', s:bg, s:red, '')
 call s:SetHighlight('Todo', s:orange, 'none', 'italic')
 
@@ -446,6 +446,8 @@ call s:SetHighlight('CocExplorerFileDiagnosticError', s:red, 'none', 'italic')
 " CocList
 call s:SetHighlight('CocListMode', s:green, s:gray700, '')
 call s:SetHighlight('CocListPath', s:gray400, s:gray700, '')
+
+call s:SetHighlight('CocCodeLens', s:gray700, '', 'italic')
 
 " zsh
 call s:SetHighlight('zshFunction', s:blue, '', '')
