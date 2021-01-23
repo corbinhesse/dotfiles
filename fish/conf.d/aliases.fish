@@ -32,6 +32,7 @@ alias gl "git pull"
 alias glu "git pull --rebase"
 alias glg "git log --stat --color --graph"
 alias glog "git log --oneline --decorate --color --graph"
+alias glogp "git log --patch-with-stat"
 alias gm "git merge"
 alias gp "git push"
 alias gpu "git push --set-upstream"
@@ -60,3 +61,7 @@ alias nrtw "npm run test:watch"
 
 # rg
 alias rgf "rg --files | rg"
+
+# delta
+alias deltaSideBySideOn "git config --global delta.side-by-side true"
+alias deltaSideBySideOff "git config --global delta.side-by-side false"
