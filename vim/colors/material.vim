@@ -430,8 +430,10 @@ call s:SetHighlight('fugitiveUntrackedHeading', s:red, '', '')
 call s:SetHighlight('fugitiveUntrackedModifier', s:gray500, '', '')
 
 " IndentGuide
-call s:SetHighlight('IndentGuidesOdd', s:gray800, s:gray1000,'')
-call s:SetHighlight('IndentGuidesEven', s:gray800, '#171F22', '')
+" call s:SetHighlight('IndentGuidesOdd', s:gray800, s:gray1000,'')
+" call s:SetHighlight('IndentGuidesEven', s:gray800, '#171F22', '')
+call s:SetHighlight('IndentGuidesOdd', s:gray900, '#171F22', '')
+call s:SetHighlight('IndentGuidesEven', s:gray900, s:bg, '')
 
 " CocExplorer
 call s:SetHighlight('CocExplorerSelectUI', s:bg, s:caret, 'bold')
