@@ -32,7 +32,6 @@ Thumbs.db
 # Custom
 *.swp
 *.cache
-tags*
 .netr*
 
 # Node
