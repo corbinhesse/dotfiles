@@ -410,6 +410,8 @@ call s:SetHighlight('markdownRule', s:gray500, '', '')
 call s:SetHighlight('markdownUrl', s:purple, '', '')
 call s:SetHighlight('markdownUrlTitleDelimiter', s:violet, '', '')
 call s:SetHighlight('markdownUrlTitle', s:violet, '', '')
+call s:SetHighlight('markdownMark', s:yellow_diff_text, s:yellow_diff, '')
+call s:SetHighlight('markdownMarkText', s:yellow, s:yellow_diff, '')
 
 " vim-fugitive
 call s:SetHighlight('diffAdded', s:green, s:green_diff, '')
