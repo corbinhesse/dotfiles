@@ -101,7 +101,6 @@ endfunction
 " Highlights
 hi link CocErrorSign Red
 hi link CocHintSign Blue
-hi link CocCodeLens LineNr
 hi link CocCursorRange DiffDelete
 hi link CocHighlightText PmenuThumb
 hi link CocWarningSign Yellow

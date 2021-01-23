@@ -1,34 +1,57 @@
 [include]
-    path = ~/.gitconfig.local
+	path = ~/.gitconfig.local
 [apply]
-    whitespace = nowarn
+	whitespace = nowarn
 [color]
-    diff = auto
-    status = auto
-    branch = auto
-    ui = true
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
 [color "diff"]
-    meta = magenta dim
+	meta = magenta dim
 [color "status"]
-    header = dim
-    branch = cyan
-    added = green
-    changed = yellow
-    untracked = red
+	header = dim
+	branch = cyan
+	added = green
+	changed = yellow
+	untracked = red
 [color "decorate"]
-    tag = cyan
+	tag = cyan
 [commit]
-    template = ~/.gitcommit
-    verbose = true
+	template = ~/.gitcommit
+	verbose = true
 [core]
-    excludesfile = ~/.gitignore
-    editor = nvim
-    mergeoptions = --no-edit
+	excludesfile = ~/.gitignore
+	editor = nvim
+	mergeoptions = --no-edit
+	pager = delta
 [difftool]
-    prompt = false
+	prompt = false
 [help]
-    autocorrect = 1
+	autocorrect = 1
 [push]
-    default = simple
+	default = simple
 [pull]
-    rebase = false
+	rebase = false
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	features = line-numbers decorations
+	side-by-side = true
+[delta "decorations"]
+	commit-decoration-style = yellow box ul
+	file-style = italic magenta
+	file-decoration-style = magenta box
+	hunk-header-style = omit
+	minus-style = syntax "#543033"
+	minus-emph-style = syntax "#8D3B3D"
+	plus-style = syntax "#40503E"
+	plus-emph-style = syntax "#647D55"
+	tabs = 2
+	whitespace-error-style = 22 reverse
+[delta "line-numbers"]
+	line-numbers-left-style = 8
+	line-numbers-right-style = 8
+	line-numbers-zero-style = 8
+	line-numbers-minus-style = red
+	line-numbers-plus-style = green

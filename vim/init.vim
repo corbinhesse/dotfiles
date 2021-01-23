@@ -12,6 +12,7 @@ source ~/.vim/plugins/coc.vim
 source ~/.vim/plugins/completion.vim
 source ~/.vim/plugins/editorconfig.vim
 source ~/.vim/plugins/git.vim
+source ~/.vim/plugins/graphql.vim
 source ~/.vim/plugins/html.vim
 source ~/.vim/plugins/indentline.vim
 source ~/.vim/plugins/javascript.vim

@@ -63,7 +63,7 @@ set foldopen-=hor
 set winminwidth=6
 set winwidth=6
 set winminheight=0
-set winblend=10
+set winblend=0
 
 " Tabline
 set showtabline=2
