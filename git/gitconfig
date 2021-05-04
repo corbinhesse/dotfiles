@@ -45,10 +45,12 @@
 	hunk-header-style = omit
 	minus-style = syntax "#543033"
 	minus-emph-style = syntax "#8D3B3D"
+	minus-empty-line-marker-style = normal red
 	plus-style = syntax "#40503E"
 	plus-emph-style = syntax "#647D55"
+	plus-empty-line-marker-style = normal green
 	tabs = 2
-	whitespace-error-style = 22 reverse
+	whitespace-error-style = red reverse
 [delta "line-numbers"]
 	line-numbers-left-style = 8
 	line-numbers-right-style = 8

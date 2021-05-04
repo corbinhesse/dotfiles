@@ -5,6 +5,9 @@ alias docs "cd ~/Documents"
 alias down "cd ~/Downloads"
 alias dot "cd ~/.dotfiles"
 
+# Actions
+alias notes "cd ~/Documents && e ~/Documents/notes.md"
+
 # List Files
 alias l "tree --dirsfirst --noreport -a -L 1"
 alias tree "tree --dirsfirst -I node_modules"
@@ -26,6 +29,7 @@ alias gcob "git checkout -b"
 alias gcod "git checkout develop"
 alias gcom "git checkout master"
 alias gd "git diff"
+alias gdi "git diff --no-index"
 alias gds "git diff --stat=80"
 alias gfa "git fetch --all --prune"
 alias gl "git pull"
@@ -44,7 +48,7 @@ alias grv "git remote -v"
 alias gsearch "git log -S"
 alias gst "git status"
 alias gsts "git status -s"
-alias gt "git tag"
+alias gt "git tag --sort=-taggerdate"
 alias gta "git tag -a"
 
 # npm
@@ -61,7 +65,12 @@ alias nrtw "npm run test:watch"
 
 # rg
 alias rgf "rg --files | rg"
+alias rgv "rg version package.json"
 
 # delta
 alias deltaSideBySideOn "git config --global delta.side-by-side true"
 alias deltaSideBySideOff "git config --global delta.side-by-side false"
+
+# Taskbook/Tasklist
+alias tb "tl"
+alias t "tl"

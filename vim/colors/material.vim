@@ -349,6 +349,8 @@ call s:SetHighlight('xmlEndTag', s:blue, '', '')
 call s:SetHighlight('xmlTag', s:blue, '', '')
 call s:SetHighlight('xmlTagName', s:blue, '', '')
 
+call s:SetHighlight('jsRegexpString', s:yellow, '', '')
+
 " React
 call s:SetHighlight('ReduxHooksKeywords', s:blue, '', '')
 call s:SetHighlight('ReduxKeywords', s:blue, '', '')
