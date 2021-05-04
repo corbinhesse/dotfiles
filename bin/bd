@@ -3,7 +3,7 @@
 if [[ $* == *-s* ]]
 then
   while getopts ":s:" opt; do
-    syntax="json"
+    syntax="$OPTARG"
     parser=${syntax}
     case $opt in
       s)
