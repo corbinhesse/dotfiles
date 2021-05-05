@@ -71,6 +71,13 @@ alias rgv "rg version package.json"
 alias deltaSideBySideOn "git config --global delta.side-by-side true"
 alias deltaSideBySideOff "git config --global delta.side-by-side false"
 
-# Taskbook/Tasklist
-alias tb "tl"
-alias t "tl"
+# Taskbook/Taskline
+alias tc "t c"
+alias td "t d"
+alias te "t e"
+alias tf "t f"
+alias th "t --help"
+alias ti "t i"
+alias tl "t l"
+alias tm "t m"
+alias tt "t t"
