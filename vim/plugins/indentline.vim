@@ -8,5 +8,7 @@ let g:indent_guides_exclude_filetypes = [
   \'help',
   \'man',
   \'markdown',
-  \'vim-plug'
+  \'vim-plug',
+  \'vista',
+  \'vista_markdown'
 \]

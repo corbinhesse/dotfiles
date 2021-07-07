@@ -18,6 +18,7 @@ source ~/.vim/plugins/indentline.vim
 source ~/.vim/plugins/javascript.vim
 source ~/.vim/plugins/lightline.vim
 source ~/.vim/plugins/prettier.vim
+source ~/.vim/plugins/vista.vim
 call plug#end()
 
 " Commands

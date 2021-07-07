@@ -64,6 +64,7 @@ function! LightlineFilePath() abort
   return fileName =~ 'fugitive' ? 'diff:' . singleDirectoryFileName
     \ : fileName =~ '/' ? singleDirectoryFileName
     \ : fileName =~ 'coc-explorer' ? expand('%:p:h:t')
+    \ : fileName =~ '__vista__' ? ''
     \ : ('' != fileName ? fileName : '[No Name]')
 endfunction
 
@@ -75,6 +76,7 @@ function! LightlineTabName(n) abort
   let singleDirectoryFileName = expand('#'.bufferNumber.':p:h:t').'/'.expand('#'.bufferNumber.':t')
   return fileName =~ '#FZF' ? 'FZF'
     \ : fileName =~ 'coc-explorer' ? singleDirectory
+    \ : fileName =~ '__vista__' ? singleDirectory
     \ : fileName =~ '/' ? singleDirectoryFileName
     \ : ('' != fileName ? fileName : '[No Name]')
 endfunction
