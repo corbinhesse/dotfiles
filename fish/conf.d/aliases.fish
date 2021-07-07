@@ -12,6 +12,9 @@ alias notes "cd ~/Documents && e ~/Documents/notes.md"
 alias l "tree --dirsfirst --noreport -a -L 1"
 alias tree "tree --dirsfirst -I node_modules"
 
+# Open
+alias o "open"
+
 # man
 alias man "viman"
 
@@ -48,7 +51,7 @@ alias grv "git remote -v"
 alias gsearch "git log -S"
 alias gst "git status"
 alias gsts "git status -s"
-alias gt "git tag --sort=-taggerdate"
+alias gt "git tag -l --sort=v:refname 'v*'"
 alias gta "git tag -a"
 
 # npm
@@ -60,8 +63,10 @@ alias nisd "npm i --save-dev"
 alias nls "npm ls"
 alias nr "npm run"
 alias nrd "npm run dev"
+alias nrs "npm run start"
 alias nrt "npm run test"
 alias nrtw "npm run test:watch"
+alias fu "fnm use"
 
 # rg
 alias rgf "rg --files | rg"
@@ -72,12 +77,13 @@ alias deltaSideBySideOn "git config --global delta.side-by-side true"
 alias deltaSideBySideOff "git config --global delta.side-by-side false"
 
 # Taskbook/Taskline
-alias tc "t c"
-alias td "t d"
-alias te "t e"
-alias tf "t f"
+alias tc "t c" # check
+alias td "t d" # delete
+alias te "t e" # edit
+alias tf "t f" # find
 alias th "t --help"
-alias ti "t i"
-alias tl "t l"
-alias tm "t m"
-alias tt "t t"
+alias ti "t i" # timeline
+alias tl "t l" # list
+alias tm "t m" # move
+alias ts "t s" # star
+alias tt "t t" # create task
