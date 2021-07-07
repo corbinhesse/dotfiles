@@ -23,6 +23,11 @@ let g:coc_global_extensions = [
 " Snippet navigation
 let g:coc_snippet_next = '<TAB>'
 let g:coc_snippet_prev = '<S-TAB>'
+let g:coc_filetype_map = {
+	\ 'markdown.mdx': 'markdown',
+	\ 'wxss': 'css',
+\ }
+
 
 " Keybindings
 nmap <silent><leader><space> :CocList<CR>
