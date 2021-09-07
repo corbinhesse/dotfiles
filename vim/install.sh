@@ -21,6 +21,7 @@ install () {
 install
 
 symlink "init.vim" "init.vim" "config/nvim"
+symlink "init-vscode.vim" "init-vscode.vim" "config/nvim"
 symlink "coc-settings.json" "coc-settings.json" "config/nvim"
 symlink "autoload" "autoload" "config/nvim"
 symlink "colors" "colors" "config/nvim"

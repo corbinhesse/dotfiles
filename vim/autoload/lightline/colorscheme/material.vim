@@ -37,7 +37,7 @@ if (exists('g:lightline'))
     \[ g:material_colorscheme_map.gray100, g:material_colorscheme_map.bg ]
   \]
   let s:palette.tabline.right = [
-    \[ g:material_colorscheme_map.gray600, g:material_colorscheme_map.bg ]
+    \[ g:material_colorscheme_map.gray200, g:material_colorscheme_map.bg ]
   \]
 
   let g:lightline#colorscheme#material#palette = lightline#colorscheme#fill(s:palette)

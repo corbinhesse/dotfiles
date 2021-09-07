@@ -114,3 +114,4 @@ hi link CocGrepLine Gray200
 hi link CocSelectedText Red
 hi link CocSelectedLine Blue
 hi link CocUnderline Underline
+hi link CocFadeOut Underline
