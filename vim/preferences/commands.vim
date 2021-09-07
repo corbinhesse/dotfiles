@@ -38,6 +38,26 @@ if !exists("*Term")
   nnoremap <silent><Leader>t :call Term()<CR>
 endif
 
+" End of Line
+let s:eol_enabled = 1
+if !exists("*EOL")
+  function! EOL() abort
+		if s:eol_enabled
+			setlocal nofixendofline
+			setlocal noendofline
+			let s:eol_enabled = 0
+		else
+			setlocal fixendofline
+			setlocal endofline
+			let s:eol_enabled = 1
+		endif
+		" :setlocal fixendofline?
+		let s:toggle = eval(s:eol_enabled) ? '' : 'no'
+		echo ':setlocal ' . s:toggle . 'endofline'
+  endfunction
+  nnoremap yoe :call EOL()<CR>
+endif
+
 " Source config file
 if !exists("*SourceConfig")
   function! SourceConfig() abort
@@ -52,4 +72,5 @@ augroup SyntaxGroupCmd
   autocmd BufNewFile,BufRead *.nvmrc set filetype=
   " autocmd BufNewFile,BufRead *.tsx,*.jsx set syntax=typescript.tsx
   autocmd BufNewFile,BufRead gitconfig* set filetype=gitconfig
+  autocmd BufNewFile,BufRead npmrc,.npmrc set filetype=npmrc
 augroup END
