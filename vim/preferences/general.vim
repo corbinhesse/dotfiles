@@ -8,14 +8,22 @@ filetype plugin indent on
 " Autoload file changed outside of Vim
 set autoread
 
-" Disable backup files
-set nobackup
-set nowb
+" Disable swap files
 set noswapfile
 
 " Undo directory
 set undodir=~/.vim/undo//
 set undofile
+
+" Backup
+set backup
+set backupdir=~/.vim/backup//
+" Make a backup before overwriting a file
+set writebackup
+" Make a copy of the file and overwrite the original one
+set backupcopy=yes
+" filename@YYYY-MM-DD
+au BufWritePre * let &backupext = '@' . strftime("%F")
 
 " Complete menu
 set completeopt=menuone,menu,longest
