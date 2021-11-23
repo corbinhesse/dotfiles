@@ -54,11 +54,11 @@ end
 
 # fnm
 if test (which fnm)
-  fnm env --multi | source
+  fnm env | source
 end
 
 # lab
-lab completion fish | source
+# lab completion fish | source
 
 # tabtab source for packages
 # uninstall by removing these lines

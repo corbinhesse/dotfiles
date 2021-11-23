@@ -14,6 +14,9 @@ install () {
   if ! [ -d "$HOME/.vim/undo" ]; then
     mkdir -p "$HOME/.vim/undo"
   fi
+  if ! [ -d "$HOME/.vim/backup" ]; then
+    mkdir -p "$HOME/.vim/backup"
+  fi
   pip3 install --user --upgrade pynvim
   python3 -m pip install --user --upgrade pynvim
 }

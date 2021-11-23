@@ -2,7 +2,10 @@
 --colors=path:fg:magenta
 --colors=line:fg:yellow
 -g=!*.lock
+-g=!*.pdf
+-g=!*.zip
 -g=!*lock.json
+-g=!.DS*
 -g=!.git/
 -g=!build/
 -g=!coverage/
