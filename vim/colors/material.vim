@@ -68,6 +68,13 @@ let s:yellow_diff = '#32362C' "15%
 let s:yellow_diff_text = '#545032' "25%
 let s:green_diff = '#40503E' "25%
 
+let s:red_guide = '#492D30' "20%
+let s:orange_guide = '#493934' "20%
+let s:yellow_guide = '#494830' "20%
+let s:green_guide = '#39483A' "20%
+let s:blue_guide = '#2A4151' "20%
+let s:purple_guide = '#3F3A4B' "20%
+
 " Globally defined variables
 let g:material_colorscheme_map = {}
 let g:material_colorscheme_map.bg = s:bg
@@ -252,6 +259,7 @@ call s:SetHighlight('jsFunction', s:purple, '', '')
 call s:SetHighlight('jsGlobalObjects', s:yellow, '', '')
 call s:SetHighlight('jsGlobalNodeObjects', s:yellow, '', '')
 call s:SetHighlight('jsIfElseBraces', s:violet, '', '')
+call s:SetHighlight('jsRepeatBraces', s:violet, '', '')
 call s:SetHighlight('jsNull', s:orange, '', '')
 call s:SetHighlight('jsStorageClass', s:purple, '', '')
 call s:SetHighlight('typescriptVariable', s:purple, '', '')
@@ -432,10 +440,16 @@ call s:SetHighlight('fugitiveUntrackedHeading', s:red, '', '')
 call s:SetHighlight('fugitiveUntrackedModifier', s:gray500, '', '')
 
 " IndentGuide
-" call s:SetHighlight('IndentGuidesOdd', s:gray800, s:gray1000,'')
-" call s:SetHighlight('IndentGuidesEven', s:gray800, '#171F22', '')
 call s:SetHighlight('IndentGuidesOdd', s:gray900, '#171F22', '')
 call s:SetHighlight('IndentGuidesEven', s:gray900, s:bg, '')
+call s:SetHighlight('IndentOne', s:gray900, '#171F22', '')
+call s:SetHighlight('IndentTwo', s:gray900, s:bg, '')
+" call s:SetHighlight('IndentOne', s:bg, s:red_guide, '')
+" call s:SetHighlight('IndentTwo', s:bg, s:orange_guide, '')
+" call s:SetHighlight('IndentThree', s:bg, s:yellow_guide, '')
+" call s:SetHighlight('IndentFour', s:bg, s:green_guide, '')
+" call s:SetHighlight('IndentFive', s:bg, s:green_guide, '')
+" call s:SetHighlight('IndentSix', s:bg, s:purple_guide, '')
 
 " CocExplorer
 call s:SetHighlight('CocExplorerSelectUI', s:bg, s:caret, 'bold')
