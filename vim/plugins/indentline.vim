@@ -23,4 +23,4 @@ let g:indent_blankline_char_highlight_list = ['IndentOne', 'IndentTwo']
 let g:indent_blankline_space_char_highlight_list = ['IndentOne', 'IndentTwo']
 let g:indent_blankline_space_char_blankline_highlight_list = ['IndentOne', 'IndentTwo']
 
-nmap <silent><leader>i :IndentBlanklineRefresh <CR>
+nmap <silent><leader>i :IndentBlanklineRefresh<CR>
