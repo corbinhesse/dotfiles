@@ -57,3 +57,5 @@
 	line-numbers-zero-style = 8
 	line-numbers-minus-style = red
 	line-numbers-plus-style = green
+[gpg]
+	program = gpg

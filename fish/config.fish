@@ -6,6 +6,7 @@ set --export PATH "$PATH:/usr/local/sbin"
 set --export PATH "$PATH:/usr/local/bin"
 set --export PATH "$PATH:/usr/local/opt/mysql@5.7/bin"
 set --export BAT_THEME 'material'
+set --export GPG_TTY (tty)
 
 # Application Variables
 set --export RIPGREP_CONFIG_PATH "$HOME/.ripgreprc"
