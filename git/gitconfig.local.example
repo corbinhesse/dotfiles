@@ -1,5 +1,8 @@
 [user]
-    name = GIT_NAME
-    email = GIT_EMAIL
+	name = GIT_NAME
+	email = GIT_EMAIL
+	signingkey =
 [credential]
-    helper = GIT_CREDENTIAL_HELPER
+	helper = GIT_CREDENTIAL_HELPER
+[commit]
+	gpgsign = true
