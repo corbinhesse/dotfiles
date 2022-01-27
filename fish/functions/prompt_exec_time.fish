@@ -1,7 +1,7 @@
 # Execution time
 function prompt_exec_time -d "Display the execution time of the last command"
   set -l command_duration "$CMD_DURATION"
-  set -l elapsed_time_threshold 5
+  set -l elapsed_time_threshold 1
   set -l prefix ' ('
   set -l suffix ')'
   set -l color brblack
