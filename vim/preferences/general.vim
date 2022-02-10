@@ -12,7 +12,7 @@ set autoread
 set noswapfile
 
 " Undo directory
-set undodir=~/.vim/undo//
+" set undodir=~/.vim/undo//
 set undofile
 
 " Backup
