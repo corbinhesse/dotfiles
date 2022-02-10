@@ -53,6 +53,7 @@ alias gst "git status"
 alias gsts "git status -s"
 alias gt "git tag -l --sort=v:refname 'v*'"
 alias gta "git tag -a"
+alias gts "git tag -s"
 
 # npm
 alias n "npm"
