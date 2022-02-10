@@ -35,7 +35,7 @@ if !exists("*Term")
     setlocal shell=/usr/local/bin/fish
     :terminal
   endfunction
-  nnoremap <silent><Leader>t :call Term()<CR>
+  nnoremap <silent><leader>t :call Term()<CR>
 endif
 
 " End of Line

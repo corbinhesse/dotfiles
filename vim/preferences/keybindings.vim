@@ -6,10 +6,9 @@ let mapleader=','
 " Save/Quit
 nnoremap <silent><Leader>w :w<CR>
 nnoremap <silent><Leader>q :q<CR>
-" nnoremap <silent><Leader>b :bd<CR>
 
 " Splits
-" nnoremap <silent><Leader>v :vs<CR>
+nnoremap <silent><Leader>v :vnew<CR>
 
 " Global Yank
 vnoremap <silent><Leader>y "*y
