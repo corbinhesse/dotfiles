@@ -1,8 +1,8 @@
 syntax match markdownCheckbox /\[[\ |x]\]/
 syntax keyword markdownCheckboxCheck x containedin=markdownCheckbox
 
-syntax match markdownMark /::[a-zA-Z|\ |-]*::/ contains=markdownMarkText
-syntax match markdownMarkText /[a-zA-Z]/ contained
+syntax match markdownMark /::[a-zA-Z0-9|\ |-|_|&]*::/ contains=markdownMarkText
+syntax match markdownMarkText /[a-zA-Z0-9]/ contained
 
 syntax region markdownCodeBlock start="^\n\( \{8,}\|\t\)" end="^\ze \{,8}\S.*$" keepend
 syntax cluster markdownBlock contains=markdownH1,markdownH2,markdownH3,markdownH4,markdownH5,markdownH6,markdownBlockquote,markdownListMarker,markdownOrderedListMarker,markdownRule
