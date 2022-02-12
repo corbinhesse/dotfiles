@@ -4,7 +4,6 @@ set --export DOTFILES "$HOME/.dotfiles"
 set --export PATH "$PATH:$DOTFILES/bin"
 set --export PATH "$PATH:/usr/local/sbin"
 set --export PATH "$PATH:/usr/local/bin"
-set --export PATH "$PATH:/usr/local/opt/mysql@5.7/bin"
 set --export BAT_THEME 'material'
 set --export GPG_TTY (tty)
 
@@ -52,14 +51,6 @@ set grc_completion (brew --prefix)/etc/grc.fish
 if test -e $grc_completion
   source $grc_completion
 end
-
-# fnm
-if test (which fnm)
-  fnm env | source
-end
-
-# lab
-# lab completion fish | source
 
 # tabtab source for packages
 # uninstall by removing these lines
