@@ -2,22 +2,22 @@
 
 if [[ $* == *-s* ]]
 then
-  while getopts ":s:" opt; do
-    syntax="$OPTARG"
-    parser=${syntax}
-    case $opt in
-      s)
-        syntax=$OPTARG
-        ;;
-      \?)
-        echo "Invalid option: -$OPTARG" >&2
-        exit 1
-        ;;
-      :)
-        ;;
-    esac
-    pbpaste | base64 -D | prettier --parser ${parser} | bat --style grid -l ${syntax}
-  done
+	while getopts ":s:" opt; do
+		syntax="$OPTARG"
+		parser=${syntax}
+		case $opt in
+			s)
+				syntax=$OPTARG
+				;;
+			\?)
+				echo "Invalid option: -$OPTARG" >&2
+				exit 1
+				;;
+			:)
+				;;
+		esac
+		pbpaste | base64 -D | prettier --parser ${parser} | bat --style grid -l ${syntax}
+	done
 else
-  pbpaste | base64 -D
+	pbpaste | base64 -D
 fi

@@ -1,6 +1,4 @@
-# Theme
+# https://github.com/sharkdp/bat#configuration-file
 --theme=material
-
 --style=grid
-
 --italic-text=always

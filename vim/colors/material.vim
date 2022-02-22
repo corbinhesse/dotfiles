@@ -7,7 +7,7 @@
 highlight clear
 
 if exists('syntax_on')
-  syntax reset
+	syntax reset
 endif
 
 let g:colors_name = 'material'
@@ -15,19 +15,19 @@ let g:colors_name = 'material'
 " === Functions ===
 
 function! s:SetHighlight(group, fg, bg, attr)
-  let l:attr = a:attr
-  if empty(l:attr)
-    let l:attr = 'none'
-  endif
-  if !empty(a:fg)
-    exec 'hi ' . a:group . ' guifg=' . a:fg
-  endif
-  if !empty(a:bg)
-    exec 'hi ' . a:group . ' guibg=' . a:bg
-  endif
-  if !empty(l:attr)
-    exec 'hi ' . a:group . ' gui=' . l:attr . ' cterm=' . l:attr
-  endif
+	let l:attr = a:attr
+	if empty(l:attr)
+		let l:attr = 'none'
+	endif
+	if !empty(a:fg)
+		exec 'hi ' . a:group . ' guifg=' . a:fg
+	endif
+	if !empty(a:bg)
+		exec 'hi ' . a:group . ' guibg=' . a:bg
+	endif
+	if !empty(l:attr)
+		exec 'hi ' . a:group . ' gui=' . l:attr . ' cterm=' . l:attr
+	endif
 endfun
 
 " === Color Definitions ===
@@ -172,7 +172,7 @@ call s:SetHighlight('StatusLine', s:fg, s:gray700, '')
 call s:SetHighlight('StatusLineNC', s:gray500, s:gray900, '')
 call s:SetHighlight('StatusLineTerm', s:bg, s:gray900, '')
 call s:SetHighlight('StatusLineTermNC', s:bg, s:gray900, '')
-call s:SetHighlight('Substitute', s:pink, s:violet, '')
+call s:SetHighlight('Substitute', s:red, s:red_diff, '')
 call s:SetHighlight('TermCursor', s:bg, s:red, '')
 call s:SetHighlight('TermCursorNC', s:bg, s:red_diff, '')
 call s:SetHighlight('Title', s:green, '', '')

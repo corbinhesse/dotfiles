@@ -12,3 +12,4 @@
 -g=!dist/
 -g=!node_modules/
 -g=!public/
+-g=!.cache/

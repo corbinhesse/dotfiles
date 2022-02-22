@@ -18,7 +18,6 @@
 [color "decorate"]
 	tag = cyan
 [commit]
-	template = ~/.gitcommit
 	verbose = true
 [core]
 	excludesfile = ~/.gitignore

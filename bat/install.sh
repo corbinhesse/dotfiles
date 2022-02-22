@@ -1,7 +1,4 @@
 #!/bin/bash
-#
-# bat
-#
 
 info "bat"
 

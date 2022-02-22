@@ -45,13 +45,3 @@ set -u fish_pager_color_description brblack # results
 set -u fish_pager_color_prefix red # searched prefix
 set -u fish_pager_color_progress brblack # more pager
 set -u fish_pager_color_selected_background --background=brblack # highlighted result
-
-# grc
-set grc_completion (brew --prefix)/etc/grc.fish
-if test -e $grc_completion
-  source $grc_completion
-end
-
-# tabtab source for packages
-# uninstall by removing these lines
-[ -f ~/.config/tabtab/__tabtab.fish ]; and . ~/.config/tabtab/__tabtab.fish; or true

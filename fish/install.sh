@@ -1,17 +1,13 @@
 #!/bin/sh
-#
-# fish
-#
 
 info "fish"
 
 install () {
-  # Switch shell
-  if [[ ! $(echo $SHELL) == $(which fish) ]]; then
-    warning "Switching Shell to fish"
-    command -v fish | sudo tee -a /etc/shells
-    chsh -s "$(command -v fish)"
-  fi
+	if [[ ! $(echo $SHELL) == $(which fish) ]]; then
+		warning "Switching Shell to fish"
+		command -v fish | sudo tee -a /etc/shells
+		chsh -s "$(command -v fish)"
+	fi
 }
 
 install

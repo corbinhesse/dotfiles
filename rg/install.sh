@@ -1,7 +1,4 @@
 #!/bin/bash
-#
-# rg
-#
 
 info "rg"
 

@@ -3,21 +3,22 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Extensions
 let g:coc_global_extensions = [
-  \ 'coc-css',
-  \ 'coc-eslint',
-  \ 'coc-explorer',
-  \ 'coc-highlight',
-  \ 'coc-git',
-  \ 'coc-json',
-  \ 'coc-lists',
-  \ 'coc-pairs',
-  \ 'coc-prettier',
-  \ 'coc-snippets',
-  \ 'coc-sql',
-  \ 'coc-tsserver',
-  \ 'coc-tslint-plugin',
-  \ 'coc-yaml',
-  \ 'coc-yank',
+	\ 'coc-css',
+	\ 'coc-eslint',
+	\ 'coc-explorer',
+	\ 'coc-highlight',
+	\ 'coc-git',
+	\ 'coc-json',
+	\ 'coc-lists',
+	\ 'coc-pairs',
+	\ 'coc-prettier',
+	\ 'coc-snippets',
+	\ 'coc-sql',
+	\ 'coc-tailwindcss',
+	\ 'coc-tslint-plugin',
+	\ 'coc-tsserver',
+	\ 'coc-yaml',
+	\ 'coc-yank',
 \ ]
 
 " Snippet navigation
@@ -96,11 +97,11 @@ xmap <silent> <C-c> y/\V<C-r>=escape(@",'/\')<CR><CR>gN<Plug>(coc-cursors-range)
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
+	if (index(['vim','help'], &filetype) >= 0)
+		execute 'h '.expand('<cword>')
+	else
+		call CocAction('doHover')
+	endif
 endfunction
 
 " Highlights
