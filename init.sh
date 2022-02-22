@@ -47,7 +47,7 @@ symlink () {
     fi
 
     ln -s "$source" "$target"
-    success "Linked $source to $target"
+    success "Linked  $target from $source"
 }
 export -f symlink
 
