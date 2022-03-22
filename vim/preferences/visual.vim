@@ -71,3 +71,6 @@ set showtabline=2
 " Scroll
 set scrolloff=1
 set sidescrolloff=5
+
+" Substitute visual
+set inccommand=nosplit
