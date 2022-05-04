@@ -7,6 +7,7 @@ install () {
 		warning "Switching Shell to fish"
 		command -v fish | sudo tee -a /etc/shells
 		chsh -s "$(command -v fish)"
+		fish_add_path /opt/homebrew/bin
 	fi
 }
 
