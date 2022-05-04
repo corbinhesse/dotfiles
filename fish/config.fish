@@ -4,6 +4,7 @@ set --export DOTFILES "$HOME/.dotfiles"
 set --export PATH "$PATH:$DOTFILES/bin"
 set --export PATH "$PATH:/usr/local/sbin"
 set --export PATH "$PATH:/usr/local/bin"
+set --export PATH "$PATH:$HOME/.composer/vendor/bin"
 set --export BAT_THEME 'material'
 set --export GPG_TTY (tty)
 
