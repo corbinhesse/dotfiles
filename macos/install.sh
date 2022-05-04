@@ -7,4 +7,4 @@ install () {
 	fi
 }
 
-# install
+install
