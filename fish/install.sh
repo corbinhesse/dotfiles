@@ -9,7 +9,6 @@ install () {
 		chsh -s "$(command -v fish)"
 	fi
 	fish_add_path /opt/homebrew/bin
-	touch ~/.hushlogin
 }
 
 install
