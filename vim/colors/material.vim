@@ -385,6 +385,7 @@ call s:SetHighlight('MatchTag', '', s:yellow_diff, 'bold')
 " JSON
 call s:SetHighlight('jsonBraces', s:fg, '', '')
 call s:SetHighlight('jsonKeyword', s:teal, '', '')
+call s:SetHighlight('jsonQuote', s:purple, '', '')
 
 " CSS
 call s:SetHighlight('cssAtRule', s:teal, '', '')
@@ -427,6 +428,9 @@ call s:SetHighlight('markdownUrlTitleDelimiter', s:violet, '', '')
 call s:SetHighlight('markdownUrlTitle', s:violet, '', '')
 call s:SetHighlight('markdownMark', s:yellow_diff_text, s:yellow_diff, '')
 call s:SetHighlight('markdownMarkText', s:yellow, s:yellow_diff, '')
+
+" GraphQL
+call s:SetHighlight('graphqlVariable', s:violet, '', '')
 
 " vim-fugitive
 call s:SetHighlight('diffAdded', s:green, s:green_diff, '')

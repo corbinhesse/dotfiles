@@ -85,6 +85,9 @@
 		"typescript": ["javascript"]
 	},
 
+	"sql.formatOptions": {
+		"linesBetweenQueries": 1
+	},
 	"sql.lintOnChange": true,
 	"sql.lintOnSave": true,
 
