@@ -40,7 +40,7 @@ nmap <silent><leader><leader>b :CocList buffers<CR>
 nmap <silent><leader><leader>d :CocList --auto-preview diagnostics<CR>
 nmap <silent><leader><leader>o :CocList outline<CR>
 
-nmap <silent><leader>ca :CocAction<CR>
+nmap <silent><leader>ca :call CocAction('codeAction')<CR>
 xmap <silent><leader>ca <Plug>(coc-codeaction-selected)
 nmap <silent><leader>cc :call CocAction('colorPresentation')<CR>
 nmap <silent><leader>cg :CocCommand git.chunkInfo<CR>
@@ -59,7 +59,8 @@ xmap <silent><leader>f <Plug>(coc-format-selected)
 
 " Completion
 inoremap <silent><expr> <c-space> coc#refresh()
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<TAB>"
 
 " Navigation
 nmap <silent>[c <Plug>(coc-diagnostic-prev)
@@ -88,8 +89,13 @@ nmap <silent><c-i> <Plug>(coc-range-select-backward)
 xmap <silent><c-i> <Plug>(coc-range-select-backward)
 
 " multiple cursors
-nmap <silent> <C-c> <Plug>(coc-cursors-word)*
-xmap <silent> <C-c> y/\V<C-r>=escape(@",'/\')<CR><CR>gN<Plug>(coc-cursors-range)gn
+nmap <expr> <silent> <C-c> <SID>select_current_word()
+function! s:select_current_word()
+  if !get(b:, 'coc_cursors_activated', 0)
+    return "\<Plug>(coc-cursors-word)"
+  endif
+  return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
+endfunc
 
 " Highlight symbols
 " autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -111,7 +117,6 @@ hi link CocCursorRange DiffDelete
 hi link CocHighlightText PmenuThumb
 hi link CocWarningSign Yellow
 hi link CocInfoSign Blue
-hi link CocGrepLine Gray200
 hi link CocSelectedText Red
 hi link CocSelectedLine Blue
 hi link CocUnderline Underline

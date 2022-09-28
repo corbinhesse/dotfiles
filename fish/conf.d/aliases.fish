@@ -88,3 +88,6 @@ alias tl "t l" # list
 alias tm "t m" # move
 alias ts "t s" # star
 alias tt "t t" # create task
+
+# python
+alias python "/usr/local/bin/python3"

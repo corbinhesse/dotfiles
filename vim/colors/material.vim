@@ -473,10 +473,29 @@ call s:SetHighlight('CocExplorerGitMixed', s:yellow, 'none', '')
 call s:SetHighlight('CocExplorerFileDiagnosticError', s:red, 'none', 'italic')
 
 " CocList
+call s:SetHighlight('CocListBg', s:blue, s:pink, '')
+call s:SetHighlight('CocListLine', s:blue, s:gray1000, '')
 call s:SetHighlight('CocListMode', s:green, s:gray700, '')
-call s:SetHighlight('CocListPath', s:gray400, s:gray700, '')
+call s:SetHighlight('CocListPath', s:gray200, s:gray700, '')
+call s:SetHighlight('CocListSearch', s:red, 'none', '')
+
+" CocNotification
+call s:SetHighlight('CocNotificationProgress', s:fg, '', '')
+
+" CocPum
+call s:SetHighlight('CocPumSearch', s:red, 'none', '')
+call s:SetHighlight('CocPumMenu', s:pink, s:teal, '')
+call s:SetHighlight('CocPumDetail', s:pink, '', '')
 
 call s:SetHighlight('CocCodeLens', s:gray700, '', 'italic')
+
+call s:SetHighlight('CocFloating', 'none', s:gray1000, '')
+call s:SetHighlight('CocFloatingBorder', s:gray900, s:gray1000, '')
+" call s:SetHighlight('CocFloatThumb', s:brown, s:red, '')
+" call s:SetHighlight('CocFloatSbar', s:teal, s:pink, '')
+call s:SetHighlight('CocFloatDividingLine', s:gray1000, '', '')
+
+call s:SetHighlight('CocMenuSel', s:blue, s:black, '')
 
 " zsh
 call s:SetHighlight('zshFunction', s:blue, '', '')
