@@ -16,7 +16,7 @@ set softtabstop=2
 set shiftwidth=2
 
 " Hidden characters
-set list
+set nolist
 set listchars=tab:→\ ,trail:-,nbsp:+,space:⋅
 " set listchars=tab:▏\ ,trail:-,nbsp:+,space:⋅
 
@@ -60,8 +60,8 @@ set splitright
 set foldopen-=hor
 
 " Window Sizes
-set winminwidth=6
-set winwidth=6
+set winminwidth=5
+set winwidth=5
 set winminheight=0
 set winblend=0
 

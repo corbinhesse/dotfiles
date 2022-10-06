@@ -8,7 +8,7 @@
 	"diagnostic.infoSign": "",
 	"diagnostic.warningSign": "",
 
-	"explorer.file.child.template": " [indent][selection][icon] [filename omitCenter 1][readonly]",
+	"explorer.file.child.template": " [indent][selection][filename omitCenter 1][readonly]",
 	"explorer.file.column.indent.chars": " ",
 	"explorer.file.column.indent.indentLine": true,
 	"explorer.file.hiddenRules": {
@@ -22,7 +22,7 @@
 	"explorer.icon.selected": "* ",
 	"explorer.openAction.strategy": "select",
 	"explorer.previewAction.onHover": false,
-	"explorer.icon.enableNerdfont": true,
+	"explorer.icon.enableNerdfont": false,
 	"explorer.icon.customIcons": {
 		"icons": {
 			"file": {
@@ -96,7 +96,6 @@
 	"notification.highlightGroup": "Gray600",
 
 	"prettier.arrowParens": "always",
-	"prettier.eslintIntegration": false,
 	"prettier.formatterPriority": 1,
 	"prettier.semi": false,
 	"prettier.singleQuote": true,
@@ -117,34 +116,6 @@
 	"sql.lintOnChange": true,
 	"sql.lintOnSave": true,
 
-	"suggest.completionItemKindLabels": {
-		"keyword": "\uf805",
-		"variable": "\ue79b",
-		"value": "\uf89f",
-		"operator": "\u03a8",
-		"constructor": "\uf0ad",
-		"function": "\u0192",
-		"reference": "\ufa46",
-		"constant": "\uf8fe",
-		"method": "\uf09a",
-		"struct": "\ufb44",
-		"class": "\uf0e8",
-		"interface": "\uf417",
-		"text": "\ue612",
-		"enum": "\uf435",
-		"enumMember": "\uf02b",
-		"module": "\uf40d",
-		"color": "\ue22b",
-		"property": "\ue624",
-		"field": "\uf9be",
-		"unit": "\uf475",
-		"event": "\ufacd",
-		"file": "\uf723",
-		"folder": "\uf114",
-		"snippet": "\ue60b",
-		"typeParameter": "\uf728",
-		"default": "\uf29c"
-	},
 	"suggest.enablePreselect": true,
 	"suggest.maxCompleteItemCount": 50,
 	"suggest.virtualText": false,

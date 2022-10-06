@@ -32,7 +32,7 @@ if !exists("*Term")
 		:tabnew
 		:0tabm
 		setlocal nonumber
-		setlocal shell=/usr/local/bin/fish
+		setlocal shell=/opt/homebrew/bin/fish
 		:terminal
 	endfunction
 	nnoremap <silent><leader>t :call Term()<CR>
@@ -64,6 +64,14 @@ if !exists("*SourceConfig")
 		so ~/.config/nvim/init.vim
 	endfunction
 	command! Config call SourceConfig()
+endif
+
+" Show Syntax
+if !exists("*Highlights")
+	function! Highlights() abort
+		:so $VIMRUNTIME/syntax/hitest.vim
+	endfunction
+	command! Highlights call Highlights()
 endif
 
 augroup SyntaxGroupCmd

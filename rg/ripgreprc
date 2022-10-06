@@ -2,14 +2,16 @@
 --colors=path:fg:magenta
 --colors=line:fg:yellow
 -g=!*.lock
+-g=!*.map
 -g=!*.pdf
 -g=!*.zip
 -g=!*lock.json
 -g=!.DS*
+-g=!.cache/
 -g=!.git/
 -g=!build/
 -g=!coverage/
 -g=!dist/
 -g=!node_modules/
 -g=!public/
--g=!.cache/
+-g=!vendor/

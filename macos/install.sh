@@ -10,7 +10,9 @@ install () {
 		mkdir -p "$HOME/Code"
 	fi
 
-	touch ~/.hushlogin
+	if ! [ -f git/gitconfig.local ]; then
+		touch ~/.hushlogin
+	fi
 }
 
 install
