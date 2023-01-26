@@ -4,9 +4,9 @@ install () {
 	info "SSH"
 	if ! [ -f "$HOME/.ssh/id_rsa.pub" ]; then
 		warning "Insert a Passphrase"
-		ssh-keygen -t rsa -b 4096 -C ""
+		ssh-keygen -t ed25519 -C ""
 		eval "$(ssh-agent -s)"
-		ssh-add -K ~/.ssh/id_rsa
+		ssh-add -K ~/.ssh/id_ed25519
 	else
 		warning "SSH Already Configured"
 	fi
