@@ -472,6 +472,12 @@ call s:SetHighlight('CocExplorerGitIgnored', s:gray300, 'none', '')
 call s:SetHighlight('CocExplorerGitMixed', s:yellow, 'none', '')
 call s:SetHighlight('CocExplorerFileDiagnosticError', s:red, 'none', 'italic')
 
+" CocDiagnostic
+call s:SetHighlight('DiagnosticError', s:red, '',  '')
+call s:SetHighlight('DiagnosticWarn', s:yellow, '', '')
+call s:SetHighlight('DiagnosticInfo', s:blue, '', '')
+call s:SetHighlight('DiagnosticHint', s:gray300, '', '')
+
 " CocList
 call s:SetHighlight('CocListBg', s:blue, s:pink, '')
 call s:SetHighlight('CocListLine', s:blue, s:gray1000, '')

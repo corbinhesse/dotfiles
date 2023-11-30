@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
+tap 'aws/tap'
 
 brew 'ack'
 brew 'awscli'
@@ -14,7 +15,6 @@ brew 'gpg'
 brew 'grc'
 brew 'hub'
 brew 'nvim'
-brew 'pandoc'
 brew 'prettier'
 brew 'python'
 brew 'ripgrep'
