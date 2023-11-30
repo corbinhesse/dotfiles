@@ -6,7 +6,7 @@ install () {
 		warning "Insert a Passphrase"
 		ssh-keygen -t ed25519 -C ""
 		eval "$(ssh-agent -s)"
-		ssh-add -K ~/.ssh/id_ed25519
+		ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 	else
 		warning "SSH Already Configured"
 	fi

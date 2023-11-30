@@ -10,6 +10,9 @@ let g:indentLine_fileTypeExclude = [
 	\'vim-plug',
 	\'vista',
 	\'vista_markdown',
+	\'copilot',
+	\'copilot.typescript',
+	\'copilot.javascript'
 \]
 
 let g:indent_blankline_buftype_exclude = ['terminal']

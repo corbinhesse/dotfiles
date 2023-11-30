@@ -13,3 +13,9 @@ hi link markdownCheckbox Gray500
 hi link markdownCheckboxCheck Red
 hi link markdownMark Gray500
 hi link markdownMarkText Red
+
+" hi MyStrikethrough gui=strikethrough guifg=blue ctermfg=blue
+" hi Conceal         guifg=red
+" call matchadd('MyStrikethrough', '\~\zs.\+\ze\~')
+" call matchadd('Conceal',  '\~\ze.\+\~', 10, -1, {'conceal':''})
+" call matchadd('Conceal',  '\~.\+\zs\~\ze', 10, -1, {'conceal':''})

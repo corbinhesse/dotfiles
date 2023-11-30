@@ -5,6 +5,8 @@ set --export PATH "$PATH:$DOTFILES/bin"
 set --export PATH "$PATH:/usr/local/sbin"
 set --export PATH "$PATH:/usr/local/bin"
 set --export PATH "$PATH:$HOME/.composer/vendor/bin"
+set --export PATH "$PATH:/opt/homebrew/opt/openssl@3/bin"
+set --export PATH "$PATH:$HOME/.rover/bin"
 set --export BAT_THEME 'material'
 set --export GPG_TTY (tty)
 

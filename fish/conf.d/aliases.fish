@@ -90,3 +90,6 @@ alias tt "t t" # create task
 
 # python
 alias python "/usr/local/bin/python3"
+
+# vscode
+alias vscode "/opt/homebrew/bin/code"

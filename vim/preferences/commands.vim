@@ -82,3 +82,20 @@ augroup SyntaxGroupCmd
 	autocmd BufNewFile,BufRead npmrc,.npmrc set filetype=npmrc
 	autocmd BufNewFile,BufRead *.arc set filetype=arc
 augroup END
+
+" Format Amazon Credentials for Fish
+if !exists("*FormatAWS")
+	function! FormatAWS() abort
+		normal! gg
+		normal! 0
+		:execute "normal! \<C-v>"
+		normal! G
+		normal! Iset --
+		:execute "%s\/=\/\ \/"
+		normal! gg
+		:execute "normal! V"
+		normal! G
+    normal! "*y
+	endfunction
+	command! FormatAWS call FormatAWS()
+endif

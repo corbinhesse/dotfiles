@@ -71,7 +71,8 @@
 		"<C-s>": "action:split",
 		"<C-v>": "action:vsplit",
 		"<C-w>": "action:preview",
-		"<C-x>": "do:switch"
+		"<C-x>": "do:switch",
+		"<C-l>": "do:exit"
 	},
 	"list.nextKeymap": "<C-n>",
 	"list.previousKeymap": "<C-p>",

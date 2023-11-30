@@ -140,6 +140,7 @@ call s:SetHighlight('Cursor', s:bg, s:caret, '')
 call s:SetHighlight('CursorColumn', '', s:gray1000, '')
 call s:SetHighlight('CursorLine', '', s:gray1000, '')
 call s:SetHighlight('CursorLineNr', s:gray400, '', '')
+call s:SetHighlight('DiagnosticError', s:red, '', '')
 call s:SetHighlight('Directory', s:blue, '', '')
 call s:SetHighlight('DiffAdd', '', s:green_diff, '')
 call s:SetHighlight('DiffDelete', 'none', s:red_diff, '')
@@ -499,6 +500,10 @@ call s:SetHighlight('CocMenuSel', s:blue, s:black, '')
 
 " zsh
 call s:SetHighlight('zshFunction', s:blue, '', '')
+
+" CoPilot
+call s:SetHighlight('CopilotSuggestion', s:gray600, '', '')
+call s:SetHighlight('copilotHeader', s:purple, '', '')
 
 " Neovim terminal colors
 let g:terminal_color_background = s:bg
