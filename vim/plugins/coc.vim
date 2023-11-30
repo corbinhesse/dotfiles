@@ -60,7 +60,8 @@ xmap <silent><leader>f <Plug>(coc-format-selected)
 " Completion
 inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<TAB>"
+inoremap <silent><expr> <c-\> coc#pum#visible() ? coc#pum#close() : ""
+" inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<TAB>"
 
 " Navigation
 nmap <silent>[c <Plug>(coc-diagnostic-prev)
