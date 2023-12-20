@@ -5,9 +5,6 @@ alias docs "cd ~/Documents"
 alias down "cd ~/Downloads"
 alias dot "cd ~/.dotfiles"
 
-# Actions
-alias notes "cd ~/Documents && e ~/Documents/notes.md"
-
 # List Files
 alias l "tree --dirsfirst --noreport -a -L 1"
 alias tree "tree --dirsfirst -I node_modules"
