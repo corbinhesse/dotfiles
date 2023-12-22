@@ -8,6 +8,7 @@ function fish_prompt --description 'Write out the prompt'
 		(prompt_jobs)\
 		(prompt_git)\
 		(prompt_node)\
+		(prompt_time)\
 		(prompt_exec_time)\
 		\n(prompt_char)
 end

@@ -1,0 +1,2 @@
+function fish_job_summary
+end

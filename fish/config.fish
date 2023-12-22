@@ -22,7 +22,6 @@ set fish_key_bindings fish_vi_key_bindings
 
 # Custom colors
 set -u fish_color_teal '#4DB6AC' # teal
-set -u fish_color_brown '#8D6E63' # brown
 
 # Color variables
 set -u fish_color_autosuggestion brblack

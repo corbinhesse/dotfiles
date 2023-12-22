@@ -9,6 +9,9 @@ alias dot "cd ~/.dotfiles"
 alias l "tree --dirsfirst --noreport -a -L 1"
 alias tree "tree --dirsfirst -I node_modules"
 
+# fg
+alias fg "fg &> /dev/null"
+
 # Open
 alias o "open"
 
