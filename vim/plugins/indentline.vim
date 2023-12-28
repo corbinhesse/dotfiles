@@ -1,5 +1,4 @@
-" indent guide
-Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v2.20.8' }
 
 let g:indentLine_fileTypeExclude = [
 	\'coc-explorer'
