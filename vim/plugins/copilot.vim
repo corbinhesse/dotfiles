@@ -1,4 +1,3 @@
-" GitHub CoPilot
 Plug 'github/copilot.vim'
 
 imap <silent> <C-j> <Plug>(copilot-next)

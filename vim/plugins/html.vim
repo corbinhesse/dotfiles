@@ -1,4 +1,3 @@
-" HTML
 Plug 'mattn/emmet-vim'
 let g:emmet_html5 = 1
 

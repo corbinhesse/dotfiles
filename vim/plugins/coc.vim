@@ -1,4 +1,3 @@
-" coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Extensions

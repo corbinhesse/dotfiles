@@ -1,4 +1,3 @@
-" Completion
 Plug 'tpope/vim-surround'
 
 Plug 'tpope/vim-unimpaired'

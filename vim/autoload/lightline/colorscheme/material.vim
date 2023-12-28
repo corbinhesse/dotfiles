@@ -1,7 +1,6 @@
 if (exists('g:lightline'))
 	let s:palette = { 'normal': {}, 'inactive': {},'tabline': {} }
 
-	" Normal
 	let s:palette.normal.left = [
 		\[ g:material_colorscheme_map.bg, g:material_colorscheme_map.yellow ],
 		\[ g:material_colorscheme_map.bg, g:material_colorscheme_map.red ],
@@ -14,7 +13,6 @@ if (exists('g:lightline'))
 		\[ g:material_colorscheme_map.gray100, g:material_colorscheme_map.gray700 ],
 	\]
 
-	" Inactive
 	let s:palette.inactive.left = [
 		\[ g:material_colorscheme_map.yellow, g:material_colorscheme_map.yellow_diff_text ],
 		\[ g:material_colorscheme_map.red, g:material_colorscheme_map.red_diff ],
@@ -26,7 +24,6 @@ if (exists('g:lightline'))
 		\[ g:material_colorscheme_map.gray600, g:material_colorscheme_map.gray900 ]
 	\]
 
-	" Tabline
 	let s:palette.tabline.left = [
 		\[ g:material_colorscheme_map.gray600, g:material_colorscheme_map.bg ]
 	\]
