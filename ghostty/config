@@ -1,0 +1,53 @@
+# This is the configuration file for Ghostty.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+background = #1C2529
+foreground = #ECEFF1
+
+macos-icon = retro
+macos-titlebar-style = tabs
+
+## Fonts
+font-size = 14
+
+font-family = SF Mono
+
+font-style = Medium
+font-style-italic = Regular Italic
+font-style-bold = Bold
+font-style-bold-italic = Bold Italic
+
+# Adjust number glyphs
+font-feature = ss04
+
+adjust-cell-height = 10%
+adjust-cell-width = -3%
+adjust-cursor-height = 3
+
+shell-integration = fish
+shell-integration-features = no-cursor
+
+cursor-color = #FFC400
+cursor-style = block
+
+theme = MaterialCorbin
+
+window-padding-x = 0
+window-padding-y = 0
+
+split-divider-color = #455A64
+
+clipboard-read = allow
+clipboard-write = allow
+copy-on-select = clipboard
+
+app-notifications = clipboard-copy
+
+keybind = super+alt+left=previous_tab
+keybind = super+alt+right=next_tab
+keybind = super+shift+left=move_tab:-1
+keybind = super+shift+right=move_tab:1

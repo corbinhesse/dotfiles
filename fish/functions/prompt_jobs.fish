@@ -8,5 +8,5 @@ function prompt_jobs --description 'Print jobs'
 	end
 
 	set_color yellow
-	echo -n ' ﹪'$jobs_amount
+	echo -n ' ％'$jobs_amount
 end
