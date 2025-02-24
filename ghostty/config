@@ -24,22 +24,24 @@ font-style-bold-italic = Bold Italic
 # Adjust number glyphs
 font-feature = ss04
 
-adjust-cell-height = 10%
+adjust-cell-height = 15%
 adjust-cell-width = -3%
-adjust-cursor-height = 3
+adjust-cursor-height = 4
+adjust-underline-position = 2
 
 shell-integration = fish
 shell-integration-features = no-cursor
 
-cursor-color = #FFC400
 cursor-style = block
+cursor-color = #FFC400
+cursor-text = #1C2529
 
 theme = MaterialCorbin
 
 window-padding-x = 0
 window-padding-y = 0
 
-split-divider-color = #455A64
+split-divider-color = #12181B
 
 clipboard-read = allow
 clipboard-write = allow
