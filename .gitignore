@@ -1,3 +1,4 @@
 git/gitconfig.local
 brew/Brewfile.lock.json
 fish/conf.d/local.fish
+ghostty/config.local
