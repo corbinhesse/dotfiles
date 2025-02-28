@@ -54,4 +54,6 @@ keybind = super+alt+right=next_tab
 keybind = super+shift+left=move_tab:-1
 keybind = super+shift+right=move_tab:1
 
+mouse-hide-while-typing = true
+
 config-file = "?~/.config/ghostty/config.local"
